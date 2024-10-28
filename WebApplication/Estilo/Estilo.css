@@ -1,0 +1,75 @@
+﻿body {
+    background: #ffffff;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.fondo-secciones {
+    background: #ededed;
+    padding: 0 20px;
+}
+
+.letra {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+#opciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.linksmenu {
+    text-align: center;
+    font-weight: 500;
+    color: #d6ac3d;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 10px;
+    border: 12px solid transparent;
+    text-transform: uppercase;
+    font-size: 18px;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+    .linksmenu::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 4px;
+        background: #d6ac3d;
+        transform: scaleX(0);
+        transition: transform 0.5s ease;
+    }
+
+    .linksmenu:hover::after {
+        transform: scaleX(1);
+    }
+
+    .linksmenu:hover {
+        transform: scale(1.1);
+    }
+
+.marcamenu {
+    margin-block-end: 0 auto;
+    width: 130px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+    .marcamenu:hover {
+        transform: scale(1.05);
+    }
+
+@media (max-width: 800px) {
+    .marcamenu {
+        width: 80px;
+    }
+    .linksmenu {
+        font-size: 10px;
+    }
+}
+.tituloinicio {
+    text-align: center;
+    color: #d6ac3d;
+    padding: 30px;
+}
