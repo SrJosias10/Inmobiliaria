@@ -15,5 +15,14 @@ namespace Dominio
         public string Apellido { get; set; }
         public int Telefono { get; set; }
 
+        public Cuenta(string cuenta, string pass)
+        {
+            cuenta = Mail;
+            Clave = pass;
+        }
+        public Cuenta()
+        {
+
+        }
     }
 }
