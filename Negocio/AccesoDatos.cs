@@ -20,8 +20,8 @@ namespace Negocio
         }
         public AccesoDatos()
         {
-            //conexion = new SqlConnection("server=.\\SQLEXPRESS; database=Inmobiliaria; integrated security=true");
-            conexion = new SqlConnection("server=.\\SQLLab3; database=Inmobiliaria; integrated security=true");
+            conexion = new SqlConnection("server=.\\SQLEXPRESS; database=Inmobiliaria; integrated security=true");
+            //conexion = new SqlConnection("server=.\\SQLLab3; database=Inmobiliaria; integrated security=true");
             comando = new SqlCommand();
 
         }

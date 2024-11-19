@@ -17,7 +17,7 @@ namespace Dominio
 
         public Cuenta(string cuenta, string pass)
         {
-            cuenta = Mail;
+            Mail = cuenta;
             Clave = pass;
         }
         public Cuenta()

@@ -44,6 +44,26 @@ namespace Negocio
                 datos.cerrarConexion();
             }
         }
+        public int insertarNuevo(Cuenta nuevo)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setearProcedimiento("insertarNuevo");
+                datos.setearParametro("@email", nuevo.Mail);
+                datos.setearParametro("@pass", nuevo.Clave);
+                return datos.ejecutarAccionScalar();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
 
         public bool Loguear(Cuenta cuenta)
         {
@@ -66,7 +86,7 @@ namespace Negocio
                     cuenta.ID = Convert.ToInt32(datos.Lector["ID"]);
                     cuenta.Nombre = datos.Lector["Nombres"] == DBNull.Value ? string.Empty : Convert.ToString(datos.Lector["Nombres"]);
                     cuenta.Apellido = datos.Lector["Apellidos"] == DBNull.Value ? string.Empty : Convert.ToString(datos.Lector["Apellidos"]);
-                    cuenta.Telefono = Convert.ToInt32(datos.Lector["Telefono"]);
+                    cuenta.Telefono = datos.Lector["Telefono"] == DBNull.Value ? 0 : Convert.ToInt32(datos.Lector["Telefono"]);
                     return true;
                 }
 
