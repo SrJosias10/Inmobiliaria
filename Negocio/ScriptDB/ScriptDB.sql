@@ -64,7 +64,8 @@ CREATE TABLE Cuenta(
     Apellidos varchar(100) null,
     Nombres varchar(100) null,
     Nacimiento date null,
-	Telefono int null
+	Telefono int null, 
+    Adm bit default(0) NULL
 )
 GO
 CREATE TABLE CuentaXinmueble (
@@ -75,8 +76,17 @@ CREATE TABLE CuentaXinmueble (
     foreign key (IdInmueble) references Inmueble(ID)
 )
 GO
-CREATE PROCEDURE [dbo].[insertarNuevo]
-@email varchar (50),
-@pass varchar (16)
-AS
-INSERT INTO Cuenta (Email, Pass) OUTPUT inserted.ID VALUES (@email, @pass)
+create Procedure insertarNuevo
+@email varchar(50),
+@pass varchar(16),
+@nombres varchar(100),
+@apellidos varchar(100),
+@telefono int, 
+@adm bit
+as
+insert into Cuenta (Email, Pass, Nombres, Apellidos, Telefono) output inserted.ID values (@email, @pass, @nombres, @apellidos, @telefono, @adm)
+
+INSERT INTO Cuenta (Email, Pass, Nombres, Apellidos, Telefono, adm)
+VALUES 
+('Josias@gmail.com', '1234', 'Josias', 'Olave', 11111111, 1)
+('Juancruz@gmail.com', '1234', 'Juan Cruz', 'Escalante', 11111111, 1)

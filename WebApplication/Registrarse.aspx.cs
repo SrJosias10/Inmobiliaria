@@ -41,6 +41,9 @@ namespace WebApplication
 
                 cuenta.Mail = email;
                 cuenta.Clave = _pass;
+                cuenta.Nombre = txtNombres.Text;
+                cuenta.Apellido = txtApellidos.Text;
+                cuenta.Telefono = int.Parse(txtTelefono.Text);
                 cuenta.ID = negocio.insertarNuevo(cuenta);
 
                 if (cuenta.ID > 0)

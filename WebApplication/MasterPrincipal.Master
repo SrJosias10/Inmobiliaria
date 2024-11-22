@@ -16,45 +16,48 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <section  class="fondo-secciones">
-    <header>
-        <nav id="opciones">
-            <div class="left-menu">
-                <a href="Inicio.aspx" class="suave">
-                    <img src="Images/logo.png" alt="Inicio Marca" class="marcamenu " />
-                </a>
-            </div>
-            <div class="right-menu">
-                <a href="/.aspx" class="linksmenu" title="Haga click para ver propiedades">Propiedades</a>
-                <a href="/.aspx" class="position-relative linksmenu" title="Haga click para conocernos">Nosotros</a>
-            </div>
-            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-    <div class="btn-group" role="group">
-        <% if (Session["cuenta"] == null)
-            { %>
-        <a class="suave linksmenu" href="InicioSesion.aspx" title="Ingresar a tu cuenta o registrarse"><i class="fa-solid fa-user"></i></a>
-        <% }
-            else
-            { %>
-        <asp:TextBox runat="server" CssClass="form-control bg-dark text-white border-0 text-center" ID="txtUser" />
+        <section class="fondo-secciones">
+            <header>
+                <nav id="opciones">
+                    <div class="left-menu">
+                        <a href="Inicio.aspx" class="suave">
+                            <img src="Images/logo.png" alt="Inicio Marca" class="marcamenu " />
+                        </a>
+                    </div>
+                    <div class="right-menu">
+                        <a href="/.aspx" class="linksmenu" title="Haga click para ver propiedades">Propiedades</a>
+                        <a href="/.aspx" class="position-relative linksmenu" title="Haga click para conocernos">Nosotros</a>
+                    </div>
+                    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                        <div class="btn-group" role="group">
+                            <% if (Session["cuenta"] == null)
+                                { %>
+                            <a class="suave linksmenu" href="InicioSesion.aspx" title="Ingresar a tu cuenta o registrarse"><i class="fa-solid fa-user"></i></a>
+                            <% }
+                                else
+                                { %>
+                            <a href="/.aspx" class="linksmenu" title="Haga click para ver propiedades">Favoritos</a>
 
-        <div class="dropdown">
-            <button class="btn btn-dark dropdown-toggle d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <asp:Image ID="imgPerfil" Style="height: 40px; width: 40px; border-radius: 50%; margin-right: 10px;"
-                    runat="server" />
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/MiPerfil.aspx">Mi Perfil</a></li>
-                <li><a class="dropdown-item" href="#" onclick="document.getElementById('<%= Button1.ClientID %>').click();">Cerrar Sesión</a></li>
-                <asp:Button Text="Salir" ID="Button1" CssClass="d-none" OnClick="btnSalir_Click" runat="server" />
-            </ul>
-        </div>
-        <% } %>
-    </div>
-        </nav>
+                            <asp:TextBox runat="server" CssClass="form-control bg-dark text-white border-0 text-center" ID="txtUser" />
 
-    </header>
-</section>
+                            <div class="dropdown">
+
+                                <ul>
+                                    <li><a class="dropdown-item" href="/MiPerfil.aspx">Mi Perfil</a></li>
+                                    <% if (((Dominio.Cuenta)Session["cuenta"]).admin)
+                                        { %>
+                                    <li><a class="dropdown-item" href="/Administrador.aspx">Administración</a></li>
+                                    <% } %>
+                                    <li><a class="dropdown-item" href="#" onclick="document.getElementById('<%= Button1.ClientID %>').click();">Cerrar Sesión</a></li>
+                                    <asp:Button Text="Salir" ID="Button1" CssClass="d-none" OnClick="btnSalir_Click" runat="server" />
+                                </ul>
+                            </div>
+                            <% } %>
+                        </div>
+                </nav>
+
+            </header>
+        </section>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>

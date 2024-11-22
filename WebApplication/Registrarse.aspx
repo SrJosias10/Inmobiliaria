@@ -1,23 +1,51 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPrincipal.Master" AutoEventWireup="true" CodeBehind="Registrarse.aspx.cs" Inherits="WebApplication.Registrarse" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-        <div class="container mt-5">
+    <div class="container mt-5">
         <div class="row">
             <div class="col-md-6 offset-md-3">
                 <h2 class="text-center mb-4" style="color: black;">Crea tu cuenta</h2>
                 <form>
                     <div class="container centrarInicio">
                         <div class="form-group">
-                            <label for="txtEmail">Correo Electrónico</label>
+                            <label for="txtEmail">Correo Electrónico (*)</label>
                             <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" placeholder="Ingrese su correo electrónico"></asp:TextBox>
                         </div>
                     </div>
                     <br />
                     <div class="container centrarInicio">
                         <div class="form-group">
-                            <label for="txtPassword">Contraseña</label>
+                            <label for="txtPassword">Contraseña (*)</label>
                             <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control" TextMode="Password" placeholder="Ingrese su contraseña"></asp:TextBox>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="container centrarInicio">
+                        <div class="form-group">
+                            <label for="txtNombres">Nombres</label>
+                            <asp:TextBox runat="server" CssClass="form-control" ID="txtNombres" placeholder="Ingrese sus nombres" />
+                        </div>
+                    </div>
+                    <br />
+                    <div class="container centrarInicio">
+                        <div class="form-group">
+                            <label for="txtApellidos">Apellidos</label>
+                            <asp:TextBox runat="server" CssClass="form-control" ID="txtApellidos" placeholder="Ingrese sus apellidos" />
+                        </div>
+                    </div>
+                    <br />
+                    <div class="container centrarInicio">
+                        <div class="form-group">
+                            <label for="txtTelefono">Teléfono</label>
+                            <asp:TextBox runat="server" CssClass="form-control" ID="txtTelefono" placeholder="Ingrese su Teléfono" />
+                        </div>
+                    </div>
+                    <br />
+                    <div class="container centrarInicio">
+                        <div class="form-group">
+                            <label>(*) campo obligatorio</label>
                         </div>
                     </div>
                     <br />
