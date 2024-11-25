@@ -20,7 +20,7 @@ CREATE TABLE Ciudad (
     ID int not null primary key identity(1,1),
     IdProvincia int not null,
     Descripcion varchar(50) not null,
-    foreign key (IdProvincia) references Provincia(ID) -- Referencia correcta a Provincia
+    foreign key (IdProvincia) references Provincia(ID) 
 )
 GO
 CREATE TABLE Ubicacion(
@@ -84,9 +84,9 @@ create Procedure insertarNuevo
 @telefono int, 
 @adm bit
 as
-insert into Cuenta (Email, Pass, Nombres, Apellidos, Telefono) output inserted.ID values (@email, @pass, @nombres, @apellidos, @telefono, @adm)
+insert into Cuenta (Email, Pass, Nombres, Apellidos, Telefono, adm) output inserted.ID values (@email, @pass, @nombres, @apellidos, @telefono, @adm)
 
 INSERT INTO Cuenta (Email, Pass, Nombres, Apellidos, Telefono, adm)
 VALUES 
-('Josias@gmail.com', '1234', 'Josias', 'Olave', 11111111, 1)
+('Josias@gmail.com', '1234', 'Josias', 'Olave', 11111111, 1),
 ('Juancruz@gmail.com', '1234', 'Juan Cruz', 'Escalante', 11111111, 1)

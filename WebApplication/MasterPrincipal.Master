@@ -27,6 +27,11 @@
                     <div class="right-menu">
                         <a href="/.aspx" class="linksmenu" title="Haga click para ver propiedades">Propiedades</a>
                         <a href="/.aspx" class="position-relative linksmenu" title="Haga click para conocernos">Nosotros</a>
+                        <% if (Session["cuenta"] != null) { %>
+                            <% if (((Dominio.Cuenta)Session["cuenta"]).admin){ %>
+                                <a href="/.aspx" class="linksmenu" title="Haga click para ver propiedades">Favoritos</a>
+                            <% } %>
+                        <% } %>
                     </div>
                     <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                         <div class="btn-group" role="group">
@@ -36,22 +41,24 @@
                             <% }
                                 else
                                 { %>
-                            <a href="/.aspx" class="linksmenu" title="Haga click para ver propiedades">Favoritos</a>
+                            
+                            <nav>
+                                <div class="dropdown">
+                                    <button class="dropbtnuno">
+                                        <asp:Label ID="lblUsuario" runat="server" Text="Usuario"></asp:Label>
+                                    </button>
 
-                            <asp:TextBox runat="server" CssClass="form-control bg-dark text-white border-0 text-center" ID="txtUser" />
+                                    <div class="dropdown-op">
+                                        <a href="/MiPerfil.aspx">Mi perfil</a>
+                                        <% if (((Dominio.Cuenta)Session["cuenta"]).admin) { %>
+                                            <a href="/Administrador.aspx">Administración</a>
+                                        <% } %>
+                                        <a class="dropdown-item" href="#" onclick="document.getElementById('<%= Button1.ClientID %>').click();">Cerrar Sesión</a>
+                                        <asp:Button Text="Salir" ID="Button1" CssClass="d-none" OnClick="btnSalir_Click" runat="server" />
+                                    </div>
+                                </div>
+                            </nav>
 
-                            <div class="dropdown">
-
-                                <ul>
-                                    <li><a class="dropdown-item" href="/MiPerfil.aspx">Mi Perfil</a></li>
-                                    <% if (((Dominio.Cuenta)Session["cuenta"]).admin)
-                                        { %>
-                                    <li><a class="dropdown-item" href="/Administrador.aspx">Administración</a></li>
-                                    <% } %>
-                                    <li><a class="dropdown-item" href="#" onclick="document.getElementById('<%= Button1.ClientID %>').click();">Cerrar Sesión</a></li>
-                                    <asp:Button Text="Salir" ID="Button1" CssClass="d-none" OnClick="btnSalir_Click" runat="server" />
-                                </ul>
-                            </div>
                             <% } %>
                         </div>
                 </nav>

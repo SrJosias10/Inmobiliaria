@@ -14,22 +14,20 @@ namespace WebApplication
         public int Cantidad { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
-            Cuenta usuario = (Cuenta)Session["cuenta"];
             if (!IsPostBack)
             {
                 if (Session["cuenta"] != null)
                 {
-                    if (!string.IsNullOrEmpty(usuario.Nombre) && !string.IsNullOrEmpty(usuario.Apellido))
+                    Cuenta usuario = (Cuenta)Session["cuenta"];
+                    if (usuario != null)
                     {
-                        txtUser.Text = usuario.Nombre + " " + usuario.Apellido;
-                    }
-                    else
-                    {
-                        txtUser.Text = usuario.Mail;
+                        lblUsuario.Text = usuario.Nombre ?? "Usuario";
                     }
                 }
             }
         }
+
+
 
         protected void btnSalir_Click(object sender, EventArgs e)
         {

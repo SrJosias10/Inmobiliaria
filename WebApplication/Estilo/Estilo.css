@@ -1,24 +1,27 @@
 ﻿body {
-    background: #ffffff;
+    background: #f7f3ef;
     font-family: 'Montserrat Alternates', sans-serif;
 }
+
 .fondo-secciones {
-    background: #ededed;
+    background: #e7ded7;
     padding: 0 20px;
 }
 
 .letra {
     font-family: 'Montserrat Alternates', sans-serif;
 }
+
 #opciones {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .linksmenu {
     text-align: center;
     font-weight: 500;
-    color: #d6ac3d;
+    color: #8b5e3c;
     text-decoration: none;
     display: inline-block;
     padding: 10px 10px;
@@ -36,7 +39,7 @@
         bottom: 0;
         width: 100%;
         height: 4px;
-        background: #d6ac3d;
+        background: #8b5e3c;
         transform: scaleX(0);
         transition: transform 0.5s ease;
     }
@@ -64,12 +67,91 @@
     .marcamenu {
         width: 80px;
     }
+
     .linksmenu {
         font-size: 10px;
     }
 }
+
 .tituloinicio {
     text-align: center;
-    color: #d6ac3d;
+    color: #8b5e3c;
     padding: 30px;
+}
+
+.dropbtnuno {
+    background: linear-gradient(135deg, #f7f3ef, #e7ded7);
+    color: #8b5e3c;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #8b5e3c;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+    .dropbtnuno:hover {
+        background: #8b5e3c;
+        color: #ffffff;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        transform: scale(1.05);
+    }
+
+.dropdown-op {
+    display: none;
+    position: absolute;
+    background: #ffffff;
+    border: 1px solid #8b5e3c;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    overflow: hidden;
+    min-width: 200px;
+    padding: 10px 0;
+    animation: fadeIn 0.3s ease-in-out;
+    right: 0;
+    transform-origin: right;
+}
+
+.dropdown:hover .dropdown-op {
+    display: block;
+}
+
+.dropdown-op a {
+    color: #8b5e3c;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    background: #ffffff;
+    border-bottom: 1px solid rgba(139, 94, 60, 0.2);
+    transition: all 0.3s ease;
+}
+
+    .dropdown-op a:last-child {
+        border-bottom: none;
+    }
+
+    .dropdown-op a:hover {
+        background-color: #8b5e3c;
+        color: #ffffff;
+        transform: translateX(5px);
+    }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
