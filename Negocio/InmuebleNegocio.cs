@@ -6,6 +6,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Dominio;
 
+
 namespace Negocio
 {
     public class InmuebleNegocio
@@ -17,29 +18,54 @@ namespace Negocio
 
             try
             {
-                datos.setearConsulta("SELECT I.ID, I.IdTipoInmueble Tipo, I.IdUbicacion Ubicacion, I.IdEstado Estado, I.IdMoneda Moneda, I.Descripcion, I.Precio, I.Ambientes, I.Garage, I.Dormitorios, I.Banos, I.Antiguedad, I.Expensas, I.Superficie FROM Inmueble I, Ciudad CIU, Cuenta CTA, Estado Est, Imagenes IMG, Moneda M, Provincia P, TipoInmueble TI, Ubicacion U Where I.IdTipoInmueble = TI.ID AND I.IdUbicacion = U.ID AND I.IdEstado = EST.ID AND I.IdMoneda = M.ID");
+                datos.setearConsulta("SELECT I.ID, TI.ID AS IDTipo, TI.Descripcion AS Tipo, U.ID AS IDUbicacion, U.Descripcion AS Ubicacion, C.ID AS IDCiudad, C.Descripcion AS Ciudad, P.ID AS IDProvincia, P.Descripcion AS Provincia, E.ID AS IDEstado, E.Descripcion AS Estado, M.ID AS IDMoneda, M.Descripcion AS Moneda, I.Descripcion, I.Precio, I.Ambientes, I.Garage, I.Dormitorios, I.Banos, I.Antiguedad, I.Expensas, I.Superficie FROM Inmueble I INNER JOIN TipoInmueble TI ON I.IdTipoInmueble = TI.ID INNER JOIN Ubicacion U ON I.IdUbicacion = U.ID INNER JOIN Estado E ON I.IdEstado = E.ID INNER JOIN Moneda M ON I.IdMoneda = M.ID INNER JOIN Ciudad C ON U.IdCiudad = C.ID INNER JOIN Provincia P ON C.IdProvincia = P.ID");
                 datos.ejecutarLectura();
-
                 while (datos.Lector.Read())
                 {
-                    Inmueble aux = new Inmueble();
-                    aux.ID = (int)datos.Lector["ID"];
-                    aux.Tipo.ID = (int)datos.Lector["IdTipoInmueble"];
-                    aux.Ubicacion.ID = (int)datos.Lector["IdUbicacion"];
-                    aux.Estado.ID = (int)datos.Lector["IdEstado"];
-                    aux.Moneda.ID = (int)datos.Lector["IdMoneda"];
-                    aux.Descripcion = (string)datos.Lector["Descripcion"];
-                    aux.Precio = (float)(decimal)datos.Lector["Precio"];
-                    aux.Ambientes = (int)datos.Lector["Ambientes"];
-                    aux.Garages = (int)datos.Lector["Garage"];
-                    aux.Dormitorios = (int)datos.Lector["Dormitorios"];
-                    aux.Banos = (int)datos.Lector["Banos"];
-                    aux.Antiguedad = (int)datos.Lector["Antiguedad"];
-                    aux.Expensas = (int)datos.Lector["Expensas"];
-                    aux.Superficie = (int)datos.Lector["Superficie"];
+                    int inmuebleId = (int)datos.Lector["ID"];
 
-                    lista.Add(aux);
+                        Inmueble aux = new Inmueble();
+                        aux.ID = (int)datos.Lector["ID"];
+
+                        aux.Tipo = new TipoInmueble();
+                        aux.Tipo.ID = (int)datos.Lector["IdTipo"];
+                        aux.Tipo.Descripcion = (string)datos.Lector["Tipo"];
+
+                        aux.Ubicacion = new Ubicacion();
+                        aux.Ubicacion.ID = (int)datos.Lector["IdUbicacion"];
+                        aux.Ubicacion.Descripcion = (string)datos.Lector["Ubicacion"];
+                        
+                        aux.Ubicacion.Ciudad = new Ciudad();
+                        aux.Ubicacion.Ciudad.ID = (int)datos.Lector["IdCiudad"];
+                        aux.Ubicacion.Ciudad.Descripcion = (string)datos.Lector["Ciudad"];
+
+                        aux.Ubicacion.Ciudad.Provincia = new Provincia();
+                        aux.Ubicacion.Ciudad.Provincia.ID = (int)datos.Lector["IdProvincia"];
+                        aux.Ubicacion.Ciudad.Provincia.Descripcion = (string)datos.Lector["Provincia"];
+                        
+                        aux.Estado = new Estado();
+                        aux.Estado.ID = (int)datos.Lector["IdEstado"];
+                        aux.Estado.Descripcion = (string)datos.Lector["Estado"];
+
+                        aux.Moneda = new Moneda();
+                        aux.Moneda.ID = (int)datos.Lector["IdMoneda"];
+                        aux.Moneda.Descripcion = (string)datos.Lector["Moneda"];
+
+                        aux.Descripcion = (string)datos.Lector["Descripcion"];
+                        aux.Precio = (float)(decimal)datos.Lector["Precio"];
+                        aux.Ambientes = (int)datos.Lector["Ambientes"];
+                        aux.Garages = (int)datos.Lector["Garage"];
+                        aux.Dormitorios = (int)datos.Lector["Dormitorios"];
+                        aux.Banos = (int)datos.Lector["Banos"];
+                        aux.Antiguedad = (int)datos.Lector["Antiguedad"];
+                        aux.Expensas = (float)(decimal)datos.Lector["Expensas"];
+                        aux.Superficie = (int)datos.Lector["Superficie"];
+
+
+                        lista.Add(aux);
+                    
                 }
+
 
                 return lista;
             }

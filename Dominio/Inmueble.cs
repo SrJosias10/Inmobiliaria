@@ -20,7 +20,7 @@ namespace Dominio
         public int Dormitorios { get; set; }
         public int Banos { get; set; }
         public int Antiguedad { get; set; }
-        public int Expensas { get; set; }
+        public float Expensas { get; set; }
         public int Superficie { get; set; }
     }
 }

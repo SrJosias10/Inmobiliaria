@@ -67,16 +67,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DetalleInmueble.aspx" />
     <Content Include="Error.aspx" />
     <Content Include="Estilo\Estilo.css" />
     <Content Include="Global.asax" />
     <Content Include="Inicio.aspx" />
     <Content Include="InicioSesion.aspx" />
+    <Content Include="Inmuebles.aspx" />
     <Content Include="MiPerfil.aspx" />
     <Content Include="Registrarse.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DetalleInmueble.aspx.cs">
+      <DependentUpon>DetalleInmueble.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetalleInmueble.aspx.designer.cs">
+      <DependentUpon>DetalleInmueble.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Error.aspx.cs">
       <DependentUpon>Error.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -100,6 +109,13 @@
     </Compile>
     <Compile Include="InicioSesion.aspx.designer.cs">
       <DependentUpon>InicioSesion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inmuebles.aspx.cs">
+      <DependentUpon>Inmuebles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inmuebles.aspx.designer.cs">
+      <DependentUpon>Inmuebles.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPrincipal.Master.cs">
       <DependentUpon>MasterPrincipal.Master</DependentUpon>
@@ -137,6 +153,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Images\" />
+    <Folder Include="ImgInmuebles\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

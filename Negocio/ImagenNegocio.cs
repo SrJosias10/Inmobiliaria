@@ -41,5 +41,35 @@ namespace Negocio
                 datos.cerrarConexion();
             }
         }
+        public List<Imagen> listarPorInmueble(int idInmueble)
+        {
+            List<Imagen> lista = new List<Imagen>();
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setearConsulta("SELECT ID, ImagenUrl FROM Imagenes WHERE IdInmueble = @InmuebleID");
+                datos.setearParametro("@InmuebleID", idInmueble);
+                datos.ejecutarLectura();
+
+                while (datos.Lector.Read())
+                {
+                    Imagen aux = new Imagen();
+                    aux.ID = (int)datos.Lector["ID"];
+                    aux.ImagenUrl = (string)datos.Lector["ImagenUrl"];
+                    lista.Add(aux);
+                }
+
+                return lista;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
     }
 }

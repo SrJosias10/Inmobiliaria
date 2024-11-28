@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="ScriptDB\Inserts.sql" />
     <Content Include="ScriptDB\ScriptDB.sql">
       <SubType>Component</SubType>
     </Content>

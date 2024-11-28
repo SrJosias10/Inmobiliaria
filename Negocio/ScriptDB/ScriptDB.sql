@@ -86,7 +86,3 @@ create Procedure insertarNuevo
 as
 insert into Cuenta (Email, Pass, Nombres, Apellidos, Telefono, adm) output inserted.ID values (@email, @pass, @nombres, @apellidos, @telefono, @adm)
 
-INSERT INTO Cuenta (Email, Pass, Nombres, Apellidos, Telefono, adm)
-VALUES 
-('Josias@gmail.com', '1234', 'Josias', 'Olave', 11111111, 1),
-('Juancruz@gmail.com', '1234', 'Juan Cruz', 'Escalante', 11111111, 1)

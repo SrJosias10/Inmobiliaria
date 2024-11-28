@@ -79,6 +79,7 @@
     padding: 30px;
 }
 
+/*Deslizable de opciones personalizado*/
 .dropbtnuno {
     background: linear-gradient(135deg, #f7f3ef, #e7ded7);
     color: #8b5e3c;
@@ -90,7 +91,6 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
-    text-transform: uppercase;
     letter-spacing: 1px;
 }
 
@@ -155,3 +155,81 @@
         transform: translateY(0);
     }
 }
+/* Estilos para el formulario de inicio de sesión y registro */
+input:focus, textarea:focus, select:focus {
+    border-color: #8b5e3c !important;
+    box-shadow: 0 0 5px #8b5e3c !important;
+    outline: none;
+}
+.form-container {
+    background-color: #f7f3ef;
+    border: 2px solid #8b5e3c;
+    color: #8b5e3c;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+    .form-container h2 {
+        color: #8b5e3c;
+    }
+
+.form-group label {
+    color: #8b5e3c;
+}
+
+.form-control {
+    background-color: #ffffff;
+    color: #8b5e3c;
+    border: 1px solid #8b5e3c;
+}
+
+.btn-primary {
+    background-color: #8b5e3c;
+    color: #ffffff;
+}
+
+.btn-cancelar {
+    background-color: transparent;
+    color: #8b5e3c;
+    border: 2px solid #8b5e3c;
+}
+
+.text-danger {
+    color: red;
+}
+
+.text-center a {
+    color: #8b5e3c;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.centrarInicio {
+    margin-bottom: 15px;
+}
+
+.d-flex {
+    justify-content: center;
+}
+
+.carousel-item img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.card {
+    background-color: #e7ded7;
+    border-color: #8b5e3c;
+}
+
+.card-title {
+    color: #8b5e3c;
+}
+
+
+

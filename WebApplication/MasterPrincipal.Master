@@ -25,7 +25,7 @@
                         </a>
                     </div>
                     <div class="right-menu">
-                        <a href="/.aspx" class="linksmenu" title="Haga click para ver propiedades">Propiedades</a>
+                        <a href="/Inmuebles.aspx" class="linksmenu" title="Haga click para ver propiedades">Propiedades</a>
                         <a href="/.aspx" class="position-relative linksmenu" title="Haga click para conocernos">Nosotros</a>
                         <% if (Session["cuenta"] != null) { %>
                             <% if (((Dominio.Cuenta)Session["cuenta"]).admin){ %>
