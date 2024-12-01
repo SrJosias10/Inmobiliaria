@@ -10,7 +10,6 @@ namespace WebApplication
 {
     public partial class MasterPrincipal : System.Web.UI.MasterPage
     {
-        Cuenta user = new Cuenta();
         public int Cantidad { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {

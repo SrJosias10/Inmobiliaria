@@ -85,4 +85,16 @@ create Procedure insertarNuevo
 @adm bit
 as
 insert into Cuenta (Email, Pass, Nombres, Apellidos, Telefono, adm) output inserted.ID values (@email, @pass, @nombres, @apellidos, @telefono, @adm)
+GO
+CREATE PROCEDURE insertarFavorito
+@idcuenta int,
+@idinmueble int
+AS
+INSERT INTO CuentaXinmueble(IdCuenta, IdInmueble) VALUES (@idcuenta, @idinmueble)
+GO
+CREATE PROCEDURE borrarFavorito
+@idcuenta int,
+@idinmueble int
+AS
+delete CuentaXinmueble where IdCuenta=@idcuenta AND IdInmueble=@idinmueble
 

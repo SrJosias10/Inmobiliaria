@@ -29,7 +29,7 @@
                         <a href="/.aspx" class="position-relative linksmenu" title="Haga click para conocernos">Nosotros</a>
                         <% if (Session["cuenta"] != null) { %>
                             <% if (((Dominio.Cuenta)Session["cuenta"]).admin){ %>
-                                <a href="/.aspx" class="linksmenu" title="Haga click para ver propiedades">Favoritos</a>
+                                <a href="Favoritos.aspx" class="linksmenu" title="Haga click para ver propiedades">Favoritos</a>
                             <% } %>
                         <% } %>
                     </div>
@@ -61,14 +61,14 @@
 
                             <% } %>
                         </div>
+                        </div>
                 </nav>
 
             </header>
         </section>
-        <div>
+        
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
-        </div>
     </form>
 </body>
 </html>

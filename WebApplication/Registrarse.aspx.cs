@@ -41,9 +41,9 @@ namespace WebApplication
 
                 cuenta.Mail = email;
                 cuenta.Clave = _pass;
-                cuenta.Nombre = txtNombres.Text;
-                cuenta.Apellido = txtApellidos.Text;
-                cuenta.Telefono = int.Parse(txtTelefono.Text);
+                cuenta.Nombre = string.IsNullOrWhiteSpace(txtNombres.Text) ? null : txtNombres.Text;
+                cuenta.Apellido = string.IsNullOrWhiteSpace(txtApellidos.Text) ? null : txtApellidos.Text;
+                cuenta.Telefono = string.IsNullOrWhiteSpace(txtTelefono.Text) ? 0 : int.Parse(txtTelefono.Text);
                 cuenta.ID = negocio.insertarNuevo(cuenta);
 
                 if (cuenta.ID > 0)
@@ -62,7 +62,7 @@ namespace WebApplication
             }
             catch (Exception ex)
             {
-                lblErrorIngreso.Text = "Ocurrió un error al intentar registrarse: " + ex.Message;
+                lblErrorIngreso.Text = "Ocurrió un error al intentar registrarse: " + ex.ToString();
                 lblErrorIngreso.Visible = true;
             }
         }

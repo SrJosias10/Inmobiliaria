@@ -231,5 +231,71 @@ input:focus, textarea:focus, select:focus {
     color: #8b5e3c;
 }
 
+/* Estilo para el modal */
+#favoritosModal .modal-content {
+    background-color: #e7ded7;
+    color: #8b5e3c;
+    border-radius: 10px;
+    border: none;
+}
+
+#favoritosModal .modal-header {
+    background-color: #fff;
+    border-bottom: 2px solid #e7ded7;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+#favoritosModal img.marcamenu {
+    max-width: 120px;
+    height: auto;
+    margin-right: 20px;
+    float: left;
+}
+
+#favoritosModal .modal-body {
+    font-size: 16px;
+    text-align: center;
+}
+
+#favoritosModal .modal-footer {
+    background-color: #e7ded7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+#favoritosModal .btn-close {
+    color: #8b5e3c;
+}
+
+#favoritosModal .btn-secondary {
+    background-color: #8b5e3c;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+    #favoritosModal .btn-secondary:hover {
+        background-color: #7a4b2f;
+    }
+
+#favoritosModal .modal-footer .btn {
+    background-color: #8b5e3c;
+    border: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+    #favoritosModal .modal-footer .btn:hover {
+        background-color: #7a4b2f;
+    }
+
+
+
 
 

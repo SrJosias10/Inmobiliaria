@@ -79,5 +79,74 @@ namespace Negocio
             }
 
         }
+        public bool VerificarExistenciaFavoritos(int idCuenta, int idInmueble)
+        {
+            bool existe = false;
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setearConsulta("SELECT 1 FROM CuentaXinmueble WHERE IdCuenta = @idCuenta AND IdInmueble = @idInmueble");
+                datos.setearParametro("@idCuenta", idCuenta);
+                datos.setearParametro("@idInmueble", idInmueble);
+
+                datos.ejecutarLectura();
+
+                if (datos.Lector.Read())
+                {
+                    existe = true;
+                }
+                return existe;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al verificar la existencia de favoritos.", ex);
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+
+        public void insertarFavorito(int cuentaActual, int inmuebleActual)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setearProcedimiento("insertarFavorito");
+                datos.setearParametro("@idcuenta", cuentaActual);
+                datos.setearParametro("@idinmueble", inmuebleActual);
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+        public void borrarFavorito(int cuentaActual, int inmuebleActual)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setearProcedimiento("borrarFavorito");
+                datos.setearParametro("@idcuenta", cuentaActual);
+                datos.setearParametro("@idinmueble", inmuebleActual);
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
     }
 }

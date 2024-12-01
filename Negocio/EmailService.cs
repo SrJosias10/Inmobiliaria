@@ -17,13 +17,14 @@ namespace Negocio
         public EmailService()
         {
             server = new SmtpClient();
-            server.Credentials = new NetworkCredential("c6dffa9ab9857b", "5c1043090d0ec0");
+            server.Credentials = new NetworkCredential("progutnpacheco@gmail.com", "peogzwfkvhjhakat");
             server.EnableSsl = true;
-            server.Port = 2525;
-            server.Host = "sandbox.smtp.mailtrap.io";
+            server.Port = 587;
+            server.EnableSsl = true;
+            server.Host = "smtp.gmail.com";
 
             email = new MailMessage();
-            email.From = new MailAddress("noresponder@programaciontres.com");
+            email.From = new MailAddress("progutnpacheco@gmail.com");
         }
 
         public void armarCorreo(string emailDestino, string asunto, string cuerpo)

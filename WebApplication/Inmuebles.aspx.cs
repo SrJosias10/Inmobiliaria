@@ -20,6 +20,10 @@ namespace WebApplication
             {
                 InmuebleNegocio inmuebleNegocio = new InmuebleNegocio();
                 ListaInmuebles = inmuebleNegocio.listar();
+                foreach (Inmueble verificar in ListaInmuebles)
+                {
+
+                }
                 Session["Inmuebles"] = ListaInmuebles;
 
                 ImagenesPorInmueble = new Dictionary<int, List<Imagen>>();

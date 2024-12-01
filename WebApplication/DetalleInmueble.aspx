@@ -11,6 +11,12 @@
                 <div class="row">
                     <!-- Información del inmueble -->
                     <div class="col-md-6">
+                         <% if (Session["cuenta"] != null && !(bool)ViewState["EsFavorito"]) { %>
+                        <div class="inmueble-container">
+                             <asp:Button CssClass="btn btn-success" runat="server" ID="Button1" CommandName="AgregarFavoritos" OnClick="AgregarFavoritos_Click" data-bs-toggle="modal" data-bs-target="#favoritosModal" Text="Añadir a favoritos" />
+                         </div>
+                        <br />
+                        <% } %>
                         <h2 style="text-align: center;"><%: inm.Tipo.Descripcion %> en <%: inm.Ubicacion.Descripcion %> con <%: inm.Ambientes %> ambientes</h2>
                         <br/>
                         <p>Descripcion: <%: inm.Descripcion %></p>
@@ -68,46 +74,30 @@
                                 <%: inm.Estado.Descripcion %>
                             </div>
                         <% } else { %>
-                            <div class="bg-danger text-white p-2 position-absolute top-0" style="left: 20px; font-size: 16px; font-weight: bold;">
+                            <div class="bg-warning text-white p-2 position-absolute top-0" style="left: 20px; font-size: 16px; font-weight: bold;">
                                 <%: inm.Estado.Descripcion %>
                             </div>
                         <% } %>
-
-
                     </div>
-                    <div class="container mt-5">
-                        <div class="row">
-                            <div class="col-md-6 offset-md-3">
-                                <div class="form-container">
-                                    <h2 class="text-center mb-4">Formulario de Contacto</h2>
-                                    <form method="post" action="mailto:mromarolave@gmail.com?subject=Mensaje desde el formulario de contacto">
-                                        <div class="form-group mb-3">
-                                            <label for="txtNombre">Nombre</label>
-                                            <input type="text" id="txtNombre" name="nombre" class="form-control" placeholder="Ingrese su nombre" required />
-                                        </div>
-                                        <div class="form-group mb-3">
-                                            <label for="txtEmail">Correo Electrónico</label>
-                                            <input type="email" id="txtEmail" name="email" class="form-control" placeholder="Ingrese su correo electrónico" required />
-                                        </div>
-                                        <div class="form-group mb-3">
-                                            <label for="txtMensaje">Mensaje</label>
-                                            <textarea id="txtMensaje" name="mensaje" class="form-control" placeholder="Escriba su mensaje" rows="4" required></textarea>
-                                        </div>
-                                        <div class="d-flex justify-content-center mb-3">
-                                            <button type="submit" class="btn btn-primary">Enviar</button>
-                                            <a href="index.aspx" class="btn btn-cancelar ms-2">Cancelar</a>
-                                        </div>
-                                        <div class="text-center">
-                                            <asp:Label ID="lblErrorMail" runat="server" Visible="false" CssClass="text-danger"></asp:Label>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </ContentTemplate>
         </asp:UpdatePanel>
     </div>
+    <div class="modal fade" id="favoritosModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="Images/logo.png" alt="Inicio Marca" class="marcamenu" />
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    El inmueble ha sido añadido a tu lista de favoritos.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </asp:Content>

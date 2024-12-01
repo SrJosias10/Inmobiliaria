@@ -55,9 +55,9 @@ namespace Negocio
                 datos.setearProcedimiento("insertarNuevo");
                 datos.setearParametro("@email", nuevo.Mail);
                 datos.setearParametro("@pass", nuevo.Clave);
-                datos.setearParametro("@nombres", nuevo.Nombre);
-                datos.setearParametro("@apellidos", nuevo.Apellido);
-                datos.setearParametro("@telefono", nuevo.Telefono);
+                datos.setearParametro("@nombres", string.IsNullOrEmpty(nuevo.Nombre) ? DBNull.Value : (object)nuevo.Nombre);
+                datos.setearParametro("@apellidos", string.IsNullOrEmpty(nuevo.Apellido) ? DBNull.Value : (object)nuevo.Apellido);
+                datos.setearParametro("@telefono", nuevo.Telefono == null ? DBNull.Value : (object)nuevo.Telefono);
                 datos.setearParametro("@adm", nuevo.admin);
                 return datos.ejecutarAccionScalar();
             }
