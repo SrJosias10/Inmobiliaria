@@ -71,5 +71,27 @@ namespace Negocio
                 datos.cerrarConexion();
             }
         }
+        public void agregarImagen(int idInmueble, string imagenUrl)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                // Insertar la imagen en la tabla Imagenes
+                datos.setearConsulta("INSERT INTO Imagenes (IdInmueble, ImagenUrl) VALUES (@idInmueble, @imagenUrl)");
+                datos.setearParametro("@idInmueble", idInmueble);
+                datos.setearParametro("@imagenUrl", imagenUrl);
+
+                datos.ejecutarAccion();  // Ejecuta la consulta de inserción
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
     }
 }

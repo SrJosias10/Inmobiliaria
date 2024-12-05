@@ -67,7 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Administrador.aspx" />
+    <Content Include="AgregarInmueble.aspx" />
     <Content Include="DetalleInmueble.aspx" />
+    <Content Include="EditarInmueble.aspx" />
     <Content Include="Error.aspx" />
     <Content Include="Estilo\Estilo.css" />
     <Content Include="Favoritos.aspx" />
@@ -75,17 +78,39 @@
     <Content Include="Inicio.aspx" />
     <Content Include="InicioSesion.aspx" />
     <Content Include="Inmuebles.aspx" />
+    <Content Include="InmueblesAdmin.aspx" />
     <Content Include="MiPerfil.aspx" />
     <Content Include="Registrarse.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administrador.aspx.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador.aspx.designer.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarInmueble.aspx.cs">
+      <DependentUpon>AgregarInmueble.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarInmueble.aspx.designer.cs">
+      <DependentUpon>AgregarInmueble.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DetalleInmueble.aspx.cs">
       <DependentUpon>DetalleInmueble.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="DetalleInmueble.aspx.designer.cs">
       <DependentUpon>DetalleInmueble.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditarInmueble.aspx.cs">
+      <DependentUpon>EditarInmueble.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarInmueble.aspx.designer.cs">
+      <DependentUpon>EditarInmueble.aspx</DependentUpon>
     </Compile>
     <Compile Include="Error.aspx.cs">
       <DependentUpon>Error.aspx</DependentUpon>
@@ -124,6 +149,13 @@
     </Compile>
     <Compile Include="Inmuebles.aspx.designer.cs">
       <DependentUpon>Inmuebles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InmueblesAdmin.aspx.cs">
+      <DependentUpon>InmueblesAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InmueblesAdmin.aspx.designer.cs">
+      <DependentUpon>InmueblesAdmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPrincipal.Master.cs">
       <DependentUpon>MasterPrincipal.Master</DependentUpon>

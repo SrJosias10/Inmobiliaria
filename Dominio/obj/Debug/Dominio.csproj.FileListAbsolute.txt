@@ -16,3 +16,9 @@ C:\Users\escal\Desktop\Inmobiliaria\Dominio\obj\Debug\Dominio.csproj.AssemblyRef
 C:\Users\escal\Desktop\Inmobiliaria\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 C:\Users\escal\Desktop\Inmobiliaria\Dominio\obj\Debug\Dominio.dll
 C:\Users\escal\Desktop\Inmobiliaria\Dominio\obj\Debug\Dominio.pdb
+C:\Users\escal\Desktop\Ultimo\Dominio\bin\Debug\Dominio.dll
+C:\Users\escal\Desktop\Ultimo\Dominio\bin\Debug\Dominio.pdb
+C:\Users\escal\Desktop\Ultimo\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+C:\Users\escal\Desktop\Ultimo\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\escal\Desktop\Ultimo\Dominio\obj\Debug\Dominio.dll
+C:\Users\escal\Desktop\Ultimo\Dominio\obj\Debug\Dominio.pdb

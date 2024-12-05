@@ -16,13 +16,14 @@ namespace Negocio
 
             try
             {
-                datos.setearConsulta("Select ID, IdCiudad, Descripcion URL From Ubicacion");
+                datos.setearConsulta("SELECT ID, IdCiudad, Descripcion FROM Ubicacion");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
                 {
                     Ubicacion aux = new Ubicacion();
                     aux.ID = (int)datos.Lector["ID"];
+                    aux.Ciudad = new Ciudad(); // Inicializamos el objeto antes de usarlo
                     aux.Ciudad.ID = (int)datos.Lector["IdCiudad"];
                     aux.Descripcion = (string)datos.Lector["Descripcion"];
 
@@ -31,10 +32,9 @@ namespace Negocio
 
                 return lista;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                throw new Exception("Error al listar ubicaciones", ex);
             }
             finally
             {

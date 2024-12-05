@@ -34,3 +34,21 @@ C:\Users\MrOmar95\Desktop\Proyectos Lab 4\Inmobiliaria\Negocio\bin\Debug\Negocio
 C:\Users\MrOmar95\Desktop\Proyectos Lab 4\Inmobiliaria\Negocio\bin\Debug\Dominio.dll
 C:\Users\MrOmar95\Desktop\Proyectos Lab 4\Inmobiliaria\Negocio\bin\Debug\Dominio.pdb
 C:\Users\MrOmar95\Desktop\Proyectos Lab 4\Inmobiliaria\Negocio\obj\Debug\Negocio.csproj.Up2Date
+C:\Users\escal\Desktop\Nueva carpeta\Inmobiliaria\Negocio\bin\Debug\Negocio.dll
+C:\Users\escal\Desktop\Nueva carpeta\Inmobiliaria\Negocio\bin\Debug\Negocio.pdb
+C:\Users\escal\Desktop\Nueva carpeta\Inmobiliaria\Negocio\bin\Debug\Dominio.dll
+C:\Users\escal\Desktop\Nueva carpeta\Inmobiliaria\Negocio\bin\Debug\Dominio.pdb
+C:\Users\escal\Desktop\Nueva carpeta\Inmobiliaria\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\escal\Desktop\Nueva carpeta\Inmobiliaria\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\escal\Desktop\Nueva carpeta\Inmobiliaria\Negocio\obj\Debug\Negocio.csproj.Up2Date
+C:\Users\escal\Desktop\Nueva carpeta\Inmobiliaria\Negocio\obj\Debug\Negocio.dll
+C:\Users\escal\Desktop\Nueva carpeta\Inmobiliaria\Negocio\obj\Debug\Negocio.pdb
+C:\Users\escal\Desktop\Ultimo\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\escal\Desktop\Ultimo\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\escal\Desktop\Ultimo\Negocio\bin\Debug\Negocio.dll
+C:\Users\escal\Desktop\Ultimo\Negocio\bin\Debug\Negocio.pdb
+C:\Users\escal\Desktop\Ultimo\Negocio\bin\Debug\Dominio.dll
+C:\Users\escal\Desktop\Ultimo\Negocio\bin\Debug\Dominio.pdb
+C:\Users\escal\Desktop\Ultimo\Negocio\obj\Debug\Negocio.csproj.Up2Date
+C:\Users\escal\Desktop\Ultimo\Negocio\obj\Debug\Negocio.dll
+C:\Users\escal\Desktop\Ultimo\Negocio\obj\Debug\Negocio.pdb

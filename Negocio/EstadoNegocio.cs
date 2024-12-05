@@ -21,13 +21,14 @@ namespace Negocio
 
                 while (datos.Lector.Read())
                 {
-                    Estado aux = new Estado();
-                    aux.ID = (int)datos.Lector["ID"];
-                    aux.Descripcion = (string)datos.Lector["Descripcion"];
+                    Estado estado = new Estado
+                    {
+                        ID = (int)datos.Lector["ID"],
+                        Descripcion = (string)datos.Lector["Descripcion"]
+                    };
+                    lista.Add(estado);
 
-                    lista.Add(aux);
                 }
-
                 return lista;
             }
             catch (Exception)

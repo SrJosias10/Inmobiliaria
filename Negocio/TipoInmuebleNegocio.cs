@@ -16,24 +16,22 @@ namespace Negocio
 
             try
             {
-                datos.setearConsulta("Select ID, Descripcion From TipoInmueble");
+                datos.setearConsulta("SELECT ID, Descripcion FROM TipoInmueble");
                 datos.ejecutarLectura();
-
                 while (datos.Lector.Read())
                 {
-                    TipoInmueble aux = new TipoInmueble();
-                    aux.ID = (int)datos.Lector["ID"];
-                    aux.Descripcion = (string)datos.Lector["Descripcion"];
-
-                    lista.Add(aux);
+                    TipoInmueble tipo = new TipoInmueble
+                    {
+                        ID = (int)datos.Lector["ID"],
+                        Descripcion = (string)datos.Lector["Descripcion"]
+                    };
+                    lista.Add(tipo);
                 }
-
                 return lista;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                throw new Exception("Error al listar tipos de inmueble.", ex);
             }
             finally
             {
