@@ -6,6 +6,24 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container py-5">
         <div class="d-flex flex-column align-items-center">
+            <div class="card mb-4 shadow-lg">
+                <div class="card-header">
+                    <h4 class="mb-0">Buscar</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <asp:TextBox ID="tbxFiltro" placeholder="Ubicación" CssClass="form-control" OnTextChanged="tbxFiltro_TextChanged" runat="server"></asp:TextBox>
+                        </div>
+                        <div class="col-md-4">
+                            <asp:DropDownList ID="ddlProvincias" CssClass="form-select" AutoPostBack="true" OnSelectedIndexChanged="ddlProvincias_SelectedIndexChanged" runat="server"></asp:DropDownList>
+                        </div>
+                        <div class="col-md-4">
+                            <asp:DropDownList ID="ddlEstados" CssClass="form-select" AutoPostBack="true" OnSelectedIndexChanged="ddlEstados_SelectedIndexChanged" runat="server"></asp:DropDownList>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <% foreach (Dominio.Inmueble inm in ListaInmuebles) { %>
                 <div class="card mb-4 w-75 shadow-lg" style="border: 1px solid #d1cfc1; background-color: #ffffff;">
                     <div class="row g-0">
@@ -71,10 +89,10 @@
 
                                 <p class="card-text" style="color: #3e3e3e;"><%: inm.Descripcion %></p>
                                 <div class="d-flex justify-content-start gap-4">
-                                    <p class="card-text"><i class="fa-solid fa-crop-simple"></i><%: inm.Superficie %>m² tot.</p>
-                                    <p class="card-text"><i class="fa-solid fa-bed"></i><%: inm.Dormitorios %></p>
-                                    <p class="card-text"><i class="fa-solid fa-toilet"></i><%: inm.Banos %></p>
-                                    <p class="card-text"><i class="fa-solid fa-warehouse"></i><%: inm.Garages %></p>
+                                    <p class="card-text"><i class="fa-solid fa-crop-simple"></i> <%: inm.Superficie %>m² tot.</p>
+                                    <p class="card-text"><i class="fa-solid fa-bed"></i> <%: inm.Dormitorios %></p>
+                                    <p class="card-text"><i class="fa-solid fa-toilet"></i> <%: inm.Banos %></p>
+                                    <p class="card-text"><i class="fa-solid fa-warehouse"></i> <%: inm.Garages %></p>
                                 </div>
                                 <a href="DetalleInmueble.aspx?id=<%: inm.ID %>" class="btn" style="background-color: #8b5e3c; color: #fff; border-radius: 5px;">Ver más detalles</a>
                             </div>

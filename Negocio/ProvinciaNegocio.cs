@@ -16,7 +16,7 @@ namespace Negocio
 
             try
             {
-                datos.setearConsulta("Select ID, Descripcion URL From Provincia");
+                datos.setearConsulta("Select ID, Descripcion From Provincia");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())

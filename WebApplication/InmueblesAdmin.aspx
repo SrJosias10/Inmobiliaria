@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container mt-4">
         <!-- Filtro de búsqueda -->
-        <div class="row mb-4">
+        <!--div class="row mb-4">
             <div class="col-12">
                 <div class="input-group">
                     <asp:TextBox ID="tbxFiltro" placeholder="Buscar" CssClass="form-control" OnTextChanged="tbxFiltro_TextChanged" AutoPostBack="true" runat="server"></asp:TextBox>
@@ -14,7 +14,7 @@
                     </span>
                 </div>
             </div>
-        </div>
+        </div>-->
         <!-- Tabla de artículos -->
         <div class="table-responsive">
             <asp:GridView ID="dgvInmuebles" DataKeyNames="ID" OnSelectedIndexChanged="dgvInmuebles_SelectedIndexChanged" runat="server" AutoGenerateColumns="false" CssClass="table table-dark table-bordered">

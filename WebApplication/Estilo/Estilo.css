@@ -294,7 +294,35 @@ input:focus, textarea:focus, select:focus {
     #favoritosModal .modal-footer .btn:hover {
         background-color: #7a4b2f;
     }
-ntr
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+    .contact-buttons a {
+        font-size: 20px;
+        color: #fff;
+        background-color: #25D366;
+        padding: 10px;
+        border-radius: 0%;
+        transition: all 0.3s ease;
+        text-decoration: none;
+    }
+
+        .contact-buttons a:hover {
+            background-color: #128C7E;
+            transform: scale(1.1);
+        }
+
+        .contact-buttons a.email {
+            background-color: #007bff;
+        }
+
+            .contact-buttons a.email:hover {
+                background-color: #0056b3;
+            }
 
 
 

@@ -67,7 +67,7 @@
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Imagen de Inmuble</label>
-                    <input type="file" id="txtImagen" runat="server" class="form-control" />
+                    <input type="file" id="txtImagen" runat="server" class="form-control" enctype="multipart/form-data"/>
                 </div>
                 <asp:Image ID="imgInmuebleNuevo" runat="server" CssClass="img-fluid mb-3" Width="350" />
             </div>
