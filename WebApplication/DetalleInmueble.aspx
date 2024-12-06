@@ -94,7 +94,7 @@
                 <br />
                 <!-- Contacto -->
                 <div class="d-flex justify-content-between">
-                    <a href="https://wa.me/5411216409283?text=Hola! quiero informacion sobre la publicacion: <%: inm.Tipo.Descripcion %> en <%: inm.Ubicacion.Descripcion %> con <%: inm.Ambientes %> ambientes" class="btn btn-success w-100 me-2">
+                    <a href="https://wa.me/541121640928?text=Hola! quiero informacion sobre la publicacion: <%: inm.Tipo.Descripcion %> en <%: inm.Ubicacion.Descripcion %> con <%: inm.Ambientes %> ambientes" class="btn btn-success w-100 me-2">
                         <i class="fa-brands fa-whatsapp"></i> Contactar por Whatsapp
                     </a>
                     <a href="mailto:josias.olave@alumnos.frgp.utn.edu.ar?subject=Consulta%20por%20Inmueble&body=Hola!%20Quiero%20información%20sobre%20la%20publicación%3A%20<%= inm.Tipo.Descripcion %>%20en%20<%= inm.Ubicacion.Descripcion %>%20con%20<%= inm.Ambientes %>%20ambientes." class="btn btn-primary w-100">

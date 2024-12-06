@@ -56,7 +56,7 @@
                 <a href="Inmuebles.aspx" class="btn btn-primary w-100">Ver Propiedades</a>
             </div>
             <div class="col-md-3 mb-2">
-                <a href="https://wa.me/5411216409283?text=Hola! quiero conocer más sobre ustedes!" class="btn btn-success w-100">
+                <a href="https://wa.me/541121640928?text=Hola! quiero conocer más sobre ustedes!" class="btn btn-success w-100">
                     <i class="fa-brands fa-whatsapp"></i> Contactar por Whatsapp
                 </a>
             </div>

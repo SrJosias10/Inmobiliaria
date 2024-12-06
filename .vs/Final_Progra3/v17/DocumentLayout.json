@@ -3,44 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\MrOmar95\\Desktop\\Inmobiliaria\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{17610EE4-A6AF-4590-9A4D-68937F08883D}|WebApplication\\WebApplication.csproj|c:\\users\\mromar95\\desktop\\inmobiliaria\\webapplication\\detalleinmueble.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{17610EE4-A6AF-4590-9A4D-68937F08883D}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\detalleinmueble.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17610EE4-A6AF-4590-9A4D-68937F08883D}|WebApplication\\WebApplication.csproj|C:\\Users\\MrOmar95\\Desktop\\Inmobiliaria\\webapplication\\nosotros.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{17610EE4-A6AF-4590-9A4D-68937F08883D}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\nosotros.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17610EE4-A6AF-4590-9A4D-68937F08883D}|WebApplication\\WebApplication.csproj|c:\\users\\mromar95\\desktop\\inmobiliaria\\webapplication\\inicio.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{17610EE4-A6AF-4590-9A4D-68937F08883D}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\inicio.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FAC73A0-FF2E-4879-8316-9D08C141C3EC}|Negocio\\Negocio.csproj|C:\\Users\\MrOmar95\\Desktop\\Inmobiliaria\\negocio\\inmueblenegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FAC73A0-FF2E-4879-8316-9D08C141C3EC}|Negocio\\Negocio.csproj|solutionrelative:negocio\\inmueblenegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{17610EE4-A6AF-4590-9A4D-68937F08883D}|WebApplication\\WebApplication.csproj|c:\\users\\mromar95\\desktop\\inmobiliaria\\webapplication\\inmueblesadmin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17610EE4-A6AF-4590-9A4D-68937F08883D}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\inmueblesadmin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17610EE4-A6AF-4590-9A4D-68937F08883D}|WebApplication\\WebApplication.csproj|c:\\users\\mromar95\\desktop\\inmobiliaria\\webapplication\\usuarios.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{17610EE4-A6AF-4590-9A4D-68937F08883D}|WebApplication\\WebApplication.csproj|C:\\Users\\MrOmar95\\Desktop\\Inmobiliaria\\webapplication\\usuarios.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{17610EE4-A6AF-4590-9A4D-68937F08883D}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\usuarios.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17610EE4-A6AF-4590-9A4D-68937F08883D}|WebApplication\\WebApplication.csproj|c:\\users\\mromar95\\desktop\\inmobiliaria\\webapplication\\inmuebles.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17610EE4-A6AF-4590-9A4D-68937F08883D}|WebApplication\\WebApplication.csproj|C:\\Users\\MrOmar95\\Desktop\\Inmobiliaria\\webapplication\\inmuebles.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17610EE4-A6AF-4590-9A4D-68937F08883D}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\inmuebles.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17610EE4-A6AF-4590-9A4D-68937F08883D}|WebApplication\\WebApplication.csproj|c:\\users\\mromar95\\desktop\\inmobiliaria\\webapplication\\inmuebles.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{17610EE4-A6AF-4590-9A4D-68937F08883D}|WebApplication\\WebApplication.csproj|C:\\Users\\MrOmar95\\Desktop\\Inmobiliaria\\webapplication\\inmuebles.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{17610EE4-A6AF-4590-9A4D-68937F08883D}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\inmuebles.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FAC73A0-FF2E-4879-8316-9D08C141C3EC}|Negocio\\Negocio.csproj|c:\\users\\mromar95\\desktop\\inmobiliaria\\negocio\\inmueblenegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FAC73A0-FF2E-4879-8316-9D08C141C3EC}|Negocio\\Negocio.csproj|solutionrelative:negocio\\inmueblenegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17610EE4-A6AF-4590-9A4D-68937F08883D}|WebApplication\\WebApplication.csproj|c:\\users\\mromar95\\desktop\\inmobiliaria\\webapplication\\inmueblesadmin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{17610EE4-A6AF-4590-9A4D-68937F08883D}|WebApplication\\WebApplication.csproj|C:\\Users\\MrOmar95\\Desktop\\Inmobiliaria\\webapplication\\inmueblesadmin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{17610EE4-A6AF-4590-9A4D-68937F08883D}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\inmueblesadmin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17610EE4-A6AF-4590-9A4D-68937F08883D}|WebApplication\\WebApplication.csproj|c:\\users\\mromar95\\desktop\\inmobiliaria\\webapplication\\administrador.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{17610EE4-A6AF-4590-9A4D-68937F08883D}|WebApplication\\WebApplication.csproj|C:\\Users\\MrOmar95\\Desktop\\Inmobiliaria\\webapplication\\administrador.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{17610EE4-A6AF-4590-9A4D-68937F08883D}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\administrador.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17610EE4-A6AF-4590-9A4D-68937F08883D}|WebApplication\\WebApplication.csproj|c:\\users\\mromar95\\desktop\\inmobiliaria\\webapplication\\estilo\\estilo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{17610EE4-A6AF-4590-9A4D-68937F08883D}|WebApplication\\WebApplication.csproj|C:\\Users\\MrOmar95\\Desktop\\Inmobiliaria\\webapplication\\estilo\\estilo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{17610EE4-A6AF-4590-9A4D-68937F08883D}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\estilo\\estilo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17610EE4-A6AF-4590-9A4D-68937F08883D}|WebApplication\\WebApplication.csproj|c:\\users\\mromar95\\desktop\\inmobiliaria\\webapplication\\registrarse.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{17610EE4-A6AF-4590-9A4D-68937F08883D}|WebApplication\\WebApplication.csproj|C:\\Users\\MrOmar95\\Desktop\\Inmobiliaria\\webapplication\\registrarse.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{17610EE4-A6AF-4590-9A4D-68937F08883D}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\registrarse.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17610EE4-A6AF-4590-9A4D-68937F08883D}|WebApplication\\WebApplication.csproj|c:\\users\\mromar95\\desktop\\inmobiliaria\\webapplication\\nosotros.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{17610EE4-A6AF-4590-9A4D-68937F08883D}|WebApplication\\WebApplication.csproj|solutionrelative:webapplication\\nosotros.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,11 +58,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DetalleInmueble.aspx",
+              "DocumentMoniker": "C:\\Users\\MrOmar95\\Desktop\\Inmobiliaria\\WebApplication\\DetalleInmueble.aspx",
+              "RelativeDocumentMoniker": "WebApplication\\DetalleInmueble.aspx",
+              "ToolTip": "C:\\Users\\MrOmar95\\Desktop\\Inmobiliaria\\WebApplication\\DetalleInmueble.aspx",
+              "RelativeToolTip": "WebApplication\\DetalleInmueble.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-12-06T19:55:04.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Inicio.aspx",
+              "DocumentMoniker": "C:\\Users\\MrOmar95\\Desktop\\Inmobiliaria\\WebApplication\\Inicio.aspx",
+              "RelativeDocumentMoniker": "WebApplication\\Inicio.aspx",
+              "ToolTip": "C:\\Users\\MrOmar95\\Desktop\\Inmobiliaria\\WebApplication\\Inicio.aspx",
+              "RelativeToolTip": "WebApplication\\Inicio.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-12-06T19:54:07.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Inmuebles.aspx.cs",
               "DocumentMoniker": "C:\\Users\\MrOmar95\\Desktop\\Inmobiliaria\\WebApplication\\Inmuebles.aspx.cs",
               "RelativeDocumentMoniker": "WebApplication\\Inmuebles.aspx.cs",
@@ -62,12 +96,11 @@
               "RelativeToolTip": "WebApplication\\Inmuebles.aspx.cs",
               "ViewState": "AQIAABEAAAAAAAAAAAAIwD4AAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T19:48:11.113Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T19:48:11.113Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Inmuebles.aspx",
               "DocumentMoniker": "C:\\Users\\MrOmar95\\Desktop\\Inmobiliaria\\WebApplication\\Inmuebles.aspx",
               "RelativeDocumentMoniker": "WebApplication\\Inmuebles.aspx",
@@ -75,25 +108,24 @@
               "RelativeToolTip": "WebApplication\\Inmuebles.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-12-06T19:48:08.184Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T19:48:08.184Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "InmuebleNegocio.cs",
               "DocumentMoniker": "C:\\Users\\MrOmar95\\Desktop\\Inmobiliaria\\Negocio\\InmuebleNegocio.cs",
               "RelativeDocumentMoniker": "Negocio\\InmuebleNegocio.cs",
               "ToolTip": "C:\\Users\\MrOmar95\\Desktop\\Inmobiliaria\\Negocio\\InmuebleNegocio.cs",
               "RelativeToolTip": "Negocio\\InmuebleNegocio.cs",
-              "ViewState": "AQIAALoAAAAAAAAAAAAmwBIAAAAyAAAA",
+              "ViewState": "AQIAAOwAAAAAAAAAAAAuwBIAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-06T19:43:45.285Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "InmueblesAdmin.aspx.cs",
               "DocumentMoniker": "C:\\Users\\MrOmar95\\Desktop\\Inmobiliaria\\WebApplication\\InmueblesAdmin.aspx.cs",
               "RelativeDocumentMoniker": "WebApplication\\InmueblesAdmin.aspx.cs",
@@ -106,7 +138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "InmueblesAdmin.aspx",
               "DocumentMoniker": "C:\\Users\\MrOmar95\\Desktop\\Inmobiliaria\\WebApplication\\InmueblesAdmin.aspx",
               "RelativeDocumentMoniker": "WebApplication\\InmueblesAdmin.aspx",
@@ -114,12 +146,11 @@
               "RelativeToolTip": "WebApplication\\InmueblesAdmin.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-12-06T19:43:17.23Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T19:43:17.23Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Administrador.aspx",
               "DocumentMoniker": "C:\\Users\\MrOmar95\\Desktop\\Inmobiliaria\\WebApplication\\Administrador.aspx",
               "RelativeDocumentMoniker": "WebApplication\\Administrador.aspx",
@@ -127,12 +158,11 @@
               "RelativeToolTip": "WebApplication\\Administrador.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-12-06T19:42:52.992Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T19:42:52.992Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Estilo.css",
               "DocumentMoniker": "C:\\Users\\MrOmar95\\Desktop\\Inmobiliaria\\WebApplication\\Estilo\\Estilo.css",
               "RelativeDocumentMoniker": "WebApplication\\Estilo\\Estilo.css",
@@ -140,12 +170,11 @@
               "RelativeToolTip": "WebApplication\\Estilo\\Estilo.css",
               "ViewState": "AQIAADMBAAAAAAAAAAAAAEcBAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-12-06T19:41:19.236Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T19:41:19.236Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Usuarios.aspx",
               "DocumentMoniker": "C:\\Users\\MrOmar95\\Desktop\\Inmobiliaria\\WebApplication\\Usuarios.aspx",
               "RelativeDocumentMoniker": "WebApplication\\Usuarios.aspx",
@@ -153,12 +182,11 @@
               "RelativeToolTip": "WebApplication\\Usuarios.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-12-06T19:40:55.219Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T19:40:55.219Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Registrarse.aspx",
               "DocumentMoniker": "C:\\Users\\MrOmar95\\Desktop\\Inmobiliaria\\WebApplication\\Registrarse.aspx",
               "RelativeDocumentMoniker": "WebApplication\\Registrarse.aspx",
@@ -166,12 +194,11 @@
               "RelativeToolTip": "WebApplication\\Registrarse.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-12-06T19:40:49.823Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T19:40:49.823Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "Nosotros.aspx",
               "DocumentMoniker": "C:\\Users\\MrOmar95\\Desktop\\Inmobiliaria\\WebApplication\\Nosotros.aspx",
               "RelativeDocumentMoniker": "WebApplication\\Nosotros.aspx",
