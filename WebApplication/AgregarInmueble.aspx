@@ -37,13 +37,17 @@
                     <label class="form-label">Cantidad Ambientes</label>
                     <asp:TextBox runat="server" CssClass="form-control" ID="txtAmbientes" />
                 </div>
+
+            </div>
+
+            <div class="col-md-4">
                 <div class="mb-3">
                     <label class="form-label">Cantidad Garages</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="txtGarage"/>
+                    <asp:TextBox runat="server" CssClass="form-control" ID="txtGarage" />
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Cantidad Dormitorios</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="txtDormitorio"/>
+                    <asp:TextBox runat="server" CssClass="form-control" ID="txtDormitorio" />
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Cantidad Baños</label>
@@ -51,7 +55,7 @@
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Antigüedad</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="txtAntiguedad"/>
+                    <asp:TextBox runat="server" CssClass="form-control" ID="txtAntiguedad" />
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Expensas</label>
@@ -61,9 +65,6 @@
                     <label class="form-label">Superficie mts2</label>
                     <asp:TextBox runat="server" CssClass="form-control" ID="txtSuperficie" />
                 </div>
-            </div>
-
-            <div class="col-md-4">
                 <div class="mb-3">
                     <label class="form-label">Imagen de Inmuble</label>
                     <input type="file" id="txtImagen" runat="server" class="form-control" />
@@ -75,7 +76,7 @@
                 <div class="row justify-content-center">
                     <div class="col-md-6">
                         <asp:Button Text="Guardar" CssClass="btn btn-danger btn-lg me-2" OnClick="btnGuardar_Click" ID="btnGuardar" runat="server" />
-                        <a href="Usuarios.aspx" class="btn btn-success">Volver</a>
+                        <a href="InmueblesAdmin.aspx" class="btn btn-success">Volver</a>
                     </div>
                 </div>
                 <asp:Label ID="lblMensaje" runat="server" Visible="false" CssClass="text-danger"></asp:Label>

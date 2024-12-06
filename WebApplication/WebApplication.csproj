@@ -69,8 +69,10 @@
   <ItemGroup>
     <Content Include="Administrador.aspx" />
     <Content Include="AgregarInmueble.aspx" />
+    <Content Include="AgregarUsuario.aspx" />
     <Content Include="DetalleInmueble.aspx" />
     <Content Include="EditarInmueble.aspx" />
+    <Content Include="EditarUsuario.aspx" />
     <Content Include="Error.aspx" />
     <Content Include="Estilo\Estilo.css" />
     <Content Include="Favoritos.aspx" />
@@ -81,6 +83,7 @@
     <Content Include="InmueblesAdmin.aspx" />
     <Content Include="MiPerfil.aspx" />
     <Content Include="Registrarse.aspx" />
+    <Content Include="Usuarios.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -98,6 +101,13 @@
     <Compile Include="AgregarInmueble.aspx.designer.cs">
       <DependentUpon>AgregarInmueble.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AgregarUsuario.aspx.cs">
+      <DependentUpon>AgregarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarUsuario.aspx.designer.cs">
+      <DependentUpon>AgregarUsuario.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DetalleInmueble.aspx.cs">
       <DependentUpon>DetalleInmueble.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -111,6 +121,13 @@
     </Compile>
     <Compile Include="EditarInmueble.aspx.designer.cs">
       <DependentUpon>EditarInmueble.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditarUsuario.aspx.cs">
+      <DependentUpon>EditarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarUsuario.aspx.designer.cs">
+      <DependentUpon>EditarUsuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="Error.aspx.cs">
       <DependentUpon>Error.aspx</DependentUpon>
@@ -178,6 +195,13 @@
     </Compile>
     <Compile Include="Registrarse.aspx.designer.cs">
       <DependentUpon>Registrarse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios.aspx.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usuarios.aspx.designer.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

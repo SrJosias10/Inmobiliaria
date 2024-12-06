@@ -16,7 +16,7 @@ namespace Negocio
 
             try
             {
-                datos.setearConsulta("Select ID, Email, Pass, Nombres, Apellidos, Nacimiento, Telefono, Adm From Cuenta");
+                datos.setearConsulta("Select ID, Email, Pass, Nombres, Apellidos, Telefono, Adm From Cuenta");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
@@ -123,6 +123,59 @@ namespace Negocio
                 datos.setearParametro("@id", user.ID);
 
                 datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+        public Cuenta obtenerPorId(int id)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            Cuenta usuario = null;
+
+            try
+            {
+                datos.setearConsulta("SELECT ID, Email, Pass, Apellidos, Nombres, Telefono, Adm FROM Cuenta WHERE ID = @id\r\n");
+                datos.setearParametro("@id", id);
+                datos.ejecutarLectura();
+
+                if (datos.Lector.Read())
+                {
+                    usuario = new Cuenta();
+                    usuario.ID = (int)datos.Lector["ID"];
+                    usuario.Mail = (string)datos.Lector["Email"];
+                    usuario.Clave = (string)datos.Lector["Pass"];
+                    usuario.Apellido = datos.Lector["Apellidos"] == DBNull.Value ? string.Empty : (string)datos.Lector["Apellidos"];
+                    usuario.Nombre = datos.Lector["Nombres"] == DBNull.Value ? string.Empty : (string)datos.Lector["Nombres"];
+                    usuario.admin = (bool)datos.Lector["Adm"];
+                    //usuario.ImagenUrl = datos.Lector["ImagenUrl"] == DBNull.Value ? string.Empty : (string)datos.Lector["ImagenUrl"];
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+
+            return usuario;
+        }
+        public bool eliminar(int id)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("delete from Cuenta where ID = @id");
+                datos.setearParametro("@id", id);
+                datos.ejecutarAccion();
+                return true;
             }
             catch (Exception ex)
             {

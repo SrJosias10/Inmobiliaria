@@ -24,10 +24,11 @@
                             <asp:Image runat="server" ID="imgArticulo" ImageUrl='<%# GetImageUrl(Eval("ImagenUrl")) %>' AlternateText="Imagen del Artículo" Width="100px" Height="100px" />
                         </ItemTemplate>
                     </asp:TemplateField>--%>
+
+                    <%--                  <asp:BoundField HeaderText="Tipo" DataField="Tipo" />--%>
+
                     <asp:BoundField HeaderText="Descripcion" DataField="Descripcion" />
                     <asp:BoundField HeaderText="Precio" DataField="Precio" />
-<%--                    <asp:BoundField HeaderText="Categoria" DataField="Categoria" />
-                    <asp:BoundField HeaderText="Marca" DataField="Marca" />--%>
                     <asp:BoundField HeaderText="Garage" DataField="Garages" />
                     <asp:BoundField HeaderText="Dormitorios" DataField="Dormitorios" />
                     <asp:BoundField HeaderText="Baños" DataField="Banos" />
@@ -51,6 +52,9 @@
             <a href="AgregarInmueble.aspx" class="btn btn-success btn-lg">
                 <i class="fa-solid fa-plus"></i>
             </a>
+        </div>
+        <div>
+            <a href="Administrador.aspx" class="btn btn-success">Volver</a>
         </div>
     </div>
 </asp:Content>

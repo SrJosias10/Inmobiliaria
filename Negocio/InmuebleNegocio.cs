@@ -333,5 +333,24 @@ namespace Negocio
                 }
             }
         }
+        public bool eliminar(int id)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("delete from Inmueble where ID = @id");
+                datos.setearParametro("@id", id);
+                datos.ejecutarAccion();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
     }
 }
