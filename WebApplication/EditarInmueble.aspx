@@ -2,97 +2,100 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:ScriptManager ID="ScriptManager" runat="server" />
+    
     <div class="container mt-5">
+        <h2 class="text-center mb-4">Editar Inmueble</h2>
+        
         <div class="row">
-            <div class="col-md-4">
+            <!-- Primera columna -->
+            <div class="col-md-5">
                 <div class="mb-3">
-                    <label for="ddlTipo" class="form-select">Seleccione Tipo</label>
-                    <asp:DropDownList class="btn dropdown-toggle form-select dropdown-celeste text-start" ID="ddlTipo" runat="server"></asp:DropDownList>
+                    <label for="ddlTipo" class="form-label">Seleccione Tipo</label>
+                    <asp:DropDownList class="form-select" ID="ddlTipo" runat="server"></asp:DropDownList>
                 </div>
                 <div class="mb-3">
-                    <label for="ddlUbicacion" class="form-select">Seleccione Ubicacion</label>
-                    <asp:DropDownList class="btn dropdown-toggle form-select dropdown-celeste text-start" ID="ddlUbicacion" runat="server"></asp:DropDownList>
+                    <label for="ddlUbicacion" class="form-label">Seleccione Ubicación</label>
+                    <asp:DropDownList class="form-select" ID="ddlUbicacion" runat="server"></asp:DropDownList>
                 </div>
                 <div class="mb-3">
-                    <label for="ddlEstado" class="form-select">Seleccione Estado</label>
-                    <asp:DropDownList class="btn dropdown-toggle form-select dropdown-celeste text-start" ID="ddlEstado" runat="server"></asp:DropDownList>
+                    <label for="ddlEstado" class="form-label">Seleccione Estado</label>
+                    <asp:DropDownList class="form-select" ID="ddlEstado" runat="server"></asp:DropDownList>
                 </div>
                 <div class="mb-3">
-                    <label for="ddlMoneda" class="form-select">Seleccione Moneda</label>
-                    <asp:DropDownList class="btn dropdown-toggle form-select dropdown-celeste text-start" ID="ddlMoneda" runat="server"></asp:DropDownList>
+                    <label for="ddlMoneda" class="form-label">Seleccione Moneda</label>
+                    <asp:DropDownList class="form-select" ID="ddlMoneda" runat="server"></asp:DropDownList>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Descripción</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="txtDescripcion" TextMode="MultiLine" Rows="5" Columns="50" MaxLength="1000"></asp:TextBox>
+                    <label for="txtDescripcion" class="form-label">Descripción</label>
+                    <asp:TextBox class="form-control" ID="txtDescripcion" TextMode="MultiLine" Rows="5" MaxLength="1000" runat="server"></asp:TextBox>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Precio</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="txtPrecio" placeholder="USD $" />
+                    <label for="txtPrecio" class="form-label">Precio</label>
+                    <asp:TextBox class="form-control" ID="txtPrecio" placeholder="USD $" runat="server" />
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Cantidad Ambientes</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="txtAmbientes" />
+                    <label for="txtAmbientes" class="form-label">Cantidad Ambientes</label>
+                    <asp:TextBox class="form-control" ID="txtAmbientes" runat="server" />
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Cantidad Garages</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="txtGarage" />
+                    <label for="txtGarage" class="form-label">Cantidad Garages</label>
+                    <asp:TextBox class="form-control" ID="txtGarage" runat="server" />
                 </div>
             </div>
-            <div class="col-md-6">
-                <!-- Segunda columna -->
+            
+            <!-- Segunda columna -->
+            <div class="col-md-5 ms-3">
                 <div class="mb-3">
-                    <label class="form-label">Cantidad Dormitorios</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="txtDormitorio" />
+                    <label for="txtDormitorio" class="form-label">Cantidad Dormitorios</label>
+                    <asp:TextBox class="form-control" ID="txtDormitorio" runat="server" />
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Cantidad Baños</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="txtBano" />
+                    <label for="txtBano" class="form-label">Cantidad Baños</label>
+                    <asp:TextBox class="form-control" ID="txtBano" runat="server" />
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Antigüedad</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="txtAntiguedad" />
+                    <label for="txtAntiguedad" class="form-label">Antigüedad</label>
+                    <asp:TextBox class="form-control" ID="txtAntiguedad" runat="server" />
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Expensas</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="txtExpensas" />
+                    <label for="txtExpensas" class="form-label">Expensas</label>
+                    <asp:TextBox class="form-control" ID="txtExpensas" runat="server" />
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Superficie mts2</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="txtSuperficie" />
+                    <label for="txtSuperficie" class="form-label">Superficie (m²)</label>
+                    <asp:TextBox class="form-control" ID="txtSuperficie" runat="server" />
                 </div>
+                
+                <!-- Confirmación de eliminación -->
                 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                     <ContentTemplate>
-                        <div class="mb-3 form-floating">
-                            <asp:TextBox runat="server" ID="txtUrl" CssClass="form-control" Style="width: 100%; max-width: 100%;" placeholder=" " AutoPostBack="true" OnTextChanged="txtUrl_TextChanged"></asp:TextBox>
-                            <label for="txtUrl">URL Imagen</label>
-                        </div>
-                        <div class="mb-3 form-floating">
-                            <asp:Image ImageUrl="https://asahimotors.com/images/nodisponible.png" runat="server" ID="imgArticulo" Style="max-width: 100%; height: auto;" OnError="imgArticulo_LoadError" />
-                        </div>
                         <asp:Button Text="Eliminar" ID="Button2" OnClick="btnEliminar_Click" CssClass="btn btn-danger float-end mb-3" runat="server" />
-                        <% if (ConfirmaEliminacion)
-                            { %>
-                        <div class="mb-3">
-                            <asp:CheckBox Text="Confirmar Eliminación" ID="chkConfirmaEliminacion" runat="server" />
-                            <asp:Button Text="Eliminar" ID="btnConfirmarEliminacion" OnClick="btnConfirmarEliminacion_Click" CssClass="btn btn-outline-danger" runat="server" />
-                        </div>
+                        <% if (ConfirmaEliminacion) { %>
+                            <div class="mb-3">
+                                <asp:CheckBox Text="Confirmar Eliminación" ID="chkConfirmaEliminacion" runat="server" />
+                                <asp:Button Text="Eliminar" ID="btnConfirmarEliminacion" OnClick="btnConfirmarEliminacion_Click" CssClass="btn btn-outline-danger" runat="server" />
+                            </div>
                         <% } %>
                     </ContentTemplate>
                 </asp:UpdatePanel>
             </div>
         </div>
 
-        <!-- Guardar o volver -->
+        <!-- Botones -->
         <div class="row mt-4">
             <div class="col-md-6 d-flex justify-content-start">
                 <div>
                     <asp:Button Text="Guardar" CssClass="btn btn-danger btn-lg me-2" OnClick="btnGuardar_Click" ID="btnGuardar" runat="server" />
-                    <a href="InmueblesAdmin.aspx" class="btn btn-success">Volver</a>
+                    <a href="InmueblesAdmin.aspx" class="btn btn-success btn-lg">Volver</a>
                 </div>
             </div>
-            <asp:Label ID="lblMensaje" runat="server" Visible="false" CssClass="text-danger"></asp:Label>
+            <div class="col-md-6 d-flex justify-content-start">
+                <asp:Label ID="lblMensaje" runat="server" Visible="false" CssClass="text-danger"></asp:Label>
+            </div>
         </div>
     </div>
+    <br /><br /><br />
 </asp:Content>

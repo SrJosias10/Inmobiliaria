@@ -157,6 +157,9 @@ namespace WebApplication
                     lblMensaje.Text = "Registro actualizado con éxito.";
                     lblMensaje.CssClass = "text-success";
                     lblMensaje.Visible = true;
+                    List<Inmueble> inmuebles = (List<Inmueble>)Session["Inmuebles"];
+                    inmuebles.Add(inmueble);
+                    Session["Inmuebles"] = inmuebles;
                 }
                 else
                 {
@@ -171,11 +174,6 @@ namespace WebApplication
                 //Session.Add("Error", ex);
                 throw ex;
             }
-        }
-
-        protected void txtUrl_TextChanged(object sender, EventArgs e)
-        {
-            imgArticulo.ImageUrl = txtUrl.Text;
         }
 
         private void CargarDatosInmueble(Inmueble inmueble)

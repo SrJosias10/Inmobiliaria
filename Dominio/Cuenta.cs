@@ -16,7 +16,6 @@ namespace Dominio
         public int Telefono { get; set; }
         public bool admin { get; set; }
 
-
         public Cuenta(string cuenta, string pass)
         {
             Mail = cuenta;
@@ -24,7 +23,7 @@ namespace Dominio
             Nombre = "Sin datos";
             Apellido = "Sin datos";
             Telefono = 0;
-            
+
         }
         public Cuenta()
         {

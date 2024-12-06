@@ -36,5 +36,27 @@ namespace WebApplication
             var id = dgvUsuarios.SelectedDataKey.Value.ToString();
             Response.Redirect("EditarUsuario.aspx?ID=" + id);
         }
+        protected void chkAdmin_CheckedChanged(object sender, EventArgs e)
+        {
+            GridViewRow row = (GridViewRow)((CheckBox)sender).NamingContainer;
+            int idUsuario = Convert.ToInt32(dgvUsuarios.DataKeys[row.RowIndex].Value);
+            CheckBox chkAdmin = (CheckBox)sender;
+            bool esAdmin = chkAdmin.Checked;
+            CuentaNegocio negocio = new CuentaNegocio();
+            if (esAdmin)
+            {
+                negocio.esADM(idUsuario);
+            }
+            else
+            {
+                negocio.esCliente(idUsuario);
+            }
+            listaUsuarios = negocio.listar();
+            Session["listaUsuarios"] = listaUsuarios;
+            dgvUsuarios.DataSource = listaUsuarios;
+            dgvUsuarios.DataBind();
+        }
+
+
     }
 }

@@ -12,6 +12,7 @@ namespace WebApplication
     public partial class EditarUsuario : System.Web.UI.Page
     {
         public bool ConfirmaEliminacion { get; set; }
+        public List<Cuenta> listaUsuarios { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
             ConfirmaEliminacion = false;
@@ -122,6 +123,8 @@ namespace WebApplication
                     CuentaNegocio negocio = new CuentaNegocio();
                     if (negocio.eliminar((int)Session["usuarioID"]))
                     {
+                        listaUsuarios = negocio.listar();
+                        Session["listaUsuarios"] = listaUsuarios;
                         Response.Redirect("Usuarios.aspx?msg=eliminado");
                     }
                     else

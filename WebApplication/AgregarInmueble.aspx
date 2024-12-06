@@ -4,83 +4,84 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-    <div class="container">
-        <br />
-        <h2 class="text-center">Agregar Inmueble</h2>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Agregar Inmueble</h2>
         <div class="row justify-content-center">
-            <div class="col-md-4">
+            <!-- Primera columna -->
+            <div class="col-md-5 bg-light p-4 rounded shadow">
                 <div class="mb-3">
                     <label for="ddlTipo" class="form-label">Seleccione Tipo</label>
-                    <asp:DropDownList class="btn dropdown-toggle form-select dropdown-celeste text-start" ID="ddlTipo" runat="server"></asp:DropDownList>
+                    <asp:DropDownList ID="ddlTipo" runat="server" CssClass="form-select"></asp:DropDownList>
                 </div>
                 <div class="mb-3">
-                    <label for="ddlUbicacion" class="form-label">Seleccione Ubicacion</label>
-                    <asp:DropDownList class="btn dropdown-toggle form-select dropdown-celeste text-start" ID="ddlUbicacion" runat="server"></asp:DropDownList>
+                    <label for="ddlUbicacion" class="form-label">Seleccione Ubicación</label>
+                    <asp:DropDownList ID="ddlUbicacion" runat="server" CssClass="form-select"></asp:DropDownList>
                 </div>
                 <div class="mb-3">
                     <label for="ddlEstado" class="form-label">Seleccione Estado</label>
-                    <asp:DropDownList class="btn dropdown-toggle form-select dropdown-celeste text-start" ID="ddlEstado" runat="server"></asp:DropDownList>
+                    <asp:DropDownList ID="ddlEstado" runat="server" CssClass="form-select"></asp:DropDownList>
                 </div>
                 <div class="mb-3">
                     <label for="ddlMoneda" class="form-label">Seleccione Moneda</label>
-                    <asp:DropDownList class="btn dropdown-toggle form-select dropdown-celeste text-start" ID="ddlMoneda" runat="server"></asp:DropDownList>
+                    <asp:DropDownList ID="ddlMoneda" runat="server" CssClass="form-select"></asp:DropDownList>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Descripción</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="txtDescripcion" TextMode="MultiLine" Rows="5" Columns="50" MaxLength="1000"></asp:TextBox>
+                    <label for="txtDescripcion" class="form-label">Descripción</label>
+                    <asp:TextBox ID="txtDescripcion" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="5" MaxLength="1000"></asp:TextBox>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Precio</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="txtPrecio" placeholder="USD $" />
+                    <label for="txtPrecio" class="form-label">Precio</label>
+                    <asp:TextBox ID="txtPrecio" runat="server" CssClass="form-control" placeholder="USD $" />
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Cantidad Ambientes</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="txtAmbientes" />
+                    <label for="txtAmbientes" class="form-label">Cantidad Ambientes</label>
+                    <asp:TextBox ID="txtAmbientes" runat="server" CssClass="form-control" />
                 </div>
-
             </div>
 
-            <div class="col-md-4">
+            <!-- Segunda columna -->
+            <div class="col-md-5 bg-light p-4 rounded shadow ms-3">
                 <div class="mb-3">
-                    <label class="form-label">Cantidad Garages</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="txtGarage" />
+                    <label for="txtGarage" class="form-label">Cantidad Garages</label>
+                    <asp:TextBox ID="txtGarage" runat="server" CssClass="form-control" />
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Cantidad Dormitorios</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="txtDormitorio" />
+                    <label for="txtDormitorio" class="form-label">Cantidad Dormitorios</label>
+                    <asp:TextBox ID="txtDormitorio" runat="server" CssClass="form-control" />
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Cantidad Baños</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="txtBano" />
+                    <label for="txtBano" class="form-label">Cantidad Baños</label>
+                    <asp:TextBox ID="txtBano" runat="server" CssClass="form-control" />
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Antigüedad</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="txtAntiguedad" />
+                    <label for="txtAntiguedad" class="form-label">Antigüedad</label>
+                    <asp:TextBox ID="txtAntiguedad" runat="server" CssClass="form-control" />
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Expensas</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="txtExpensas" />
+                    <label for="txtExpensas" class="form-label">Expensas</label>
+                    <asp:TextBox ID="txtExpensas" runat="server" CssClass="form-control" />
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Superficie mts2</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="txtSuperficie" />
+                    <label for="txtSuperficie" class="form-label">Superficie (m²)</label>
+                    <asp:TextBox ID="txtSuperficie" runat="server" CssClass="form-control" />
                 </div>
-                <div class="mb-3">
-                    <label class="form-label">Imagen de Inmuble</label>
-                    <input type="file" id="txtImagen" runat="server" class="form-control" enctype="multipart/form-data"/>
-                </div>
-                <asp:Image ID="imgInmuebleNuevo" runat="server" CssClass="img-fluid mb-3" Width="350" />
             </div>
+        </div>
 
-            <div class="col-md-6">
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <asp:Button Text="Guardar" CssClass="btn btn-danger btn-lg me-2" OnClick="btnGuardar_Click" ID="btnGuardar" runat="server" />
-                        <a href="InmueblesAdmin.aspx" class="btn btn-success">Volver</a>
-                    </div>
-                </div>
+        <!-- Botones -->
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-4 text-center">
+                <asp:Button ID="btnGuardar" runat="server" CssClass="btn btn-danger btn-lg me-3" Text="Guardar" OnClick="btnGuardar_Click" />
+                <a href="InmueblesAdmin.aspx" class="btn btn-success btn-lg">Volver</a>
+            </div>
+        </div>
+
+        <!-- Mensaje -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-6 text-center">
                 <asp:Label ID="lblMensaje" runat="server" Visible="false" CssClass="text-danger"></asp:Label>
             </div>
         </div>
     </div>
+    <br /><br /><br />
 </asp:Content>

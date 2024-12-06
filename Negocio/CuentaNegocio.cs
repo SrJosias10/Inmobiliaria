@@ -77,16 +77,11 @@ namespace Negocio
 
             try
             {
-                // Asegúrate de que los parámetros se están pasando correctamente
                 datos.setearConsulta("SELECT ID, Email, Pass, Nombres, Apellidos, Nacimiento, Telefono, Adm FROM Cuenta WHERE Email = @email AND Pass = @pass");
-
-                // Asegúrate de agregar los parámetros correctamente con los valores de la cuenta
                 datos.setearParametro("@email", cuenta.Mail);
                 datos.setearParametro("@pass", cuenta.Clave);
 
                 datos.ejecutarLectura();
-
-                // Si se encuentra el usuario, asignamos los datos
                 if (datos.Lector.Read())
                 {
                     cuenta.ID = Convert.ToInt32(datos.Lector["ID"]);
@@ -97,8 +92,6 @@ namespace Negocio
 
                     return true;
                 }
-
-                // Si no se encuentra el usuario, devolvemos false
                 return false;
             }
             catch (Exception ex)
@@ -173,6 +166,44 @@ namespace Negocio
             try
             {
                 datos.setearConsulta("delete from Cuenta where ID = @id");
+                datos.setearParametro("@id", id);
+                datos.ejecutarAccion();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+        public bool esADM(int id)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("UPDATE Cuenta SET Adm = 1 WHERE ID = @id");
+                datos.setearParametro("@id", id);
+                datos.ejecutarAccion();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+        public bool esCliente(int id)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("UPDATE Cuenta SET Adm = 0 WHERE ID = @id");
                 datos.setearParametro("@id", id);
                 datos.ejecutarAccion();
                 return true;

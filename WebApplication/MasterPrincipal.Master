@@ -26,11 +26,9 @@
                     </div>
                     <div class="right-menu">
                         <a href="/Inmuebles.aspx" class="linksmenu" title="Haga click para ver propiedades">Propiedades</a>
-                        <a href="/.aspx" class="position-relative linksmenu" title="Haga click para conocernos">Nosotros</a>
+                        <a href="/Nosotros.aspx" class="position-relative linksmenu" title="Haga click para conocernos">Nosotros</a>
                         <% if (Session["cuenta"] != null) { %>
-                            <% if (((Dominio.Cuenta)Session["cuenta"]).admin){ %>
                                 <a href="Favoritos.aspx" class="linksmenu" title="Haga click para ver propiedades">Favoritos</a>
-                            <% } %>
                         <% } %>
                     </div>
                     <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
@@ -69,6 +67,9 @@
         
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
+        <footer>
+            <p>© 2024 Escalante y Olave - Programacion 3</p>
+        </footer>
     </form>
 </body>
 </html>

@@ -48,14 +48,18 @@ namespace WebApplication
 
                 if (cuenta.ID > 0)
                 {
-                    emailService.armarCorreo(cuenta.Mail, "Bienvenida", "Hola, ¡bienvenido a nuestra aplicación!");
+                    emailService.armarCorreo(
+                        cuenta.Mail,
+                        "Bienvenidos a Prime Properties",
+                        "Hola, tu cuenta ha sido dada de alta. Ya puedes iniciar sesión en nuestra página web: <a href='https://localhost:44311/InicioSesion.aspx'>Iniciar sesión</a>"
+                    );
                     emailService.enviarEmail();
 
                     lblDatosVacios.Text = "¡Ya estás registrado! Se ha enviado un correo de confirmación.";
                     lblDatosVacios.Visible = true;
 
-                    cuenta = new Cuenta(email, _pass);
-                    Session.Add("cuenta", cuenta);
+                    /*cuenta = new Cuenta(email, _pass);
+                    Session.Add("cuenta", cuenta);*/
 
                     ScriptManager.RegisterStartupScript(this, GetType(), "redirect", "setTimeout(function(){ window.location.href = 'Inicio.aspx'; }, 2000);", true);
                 }
