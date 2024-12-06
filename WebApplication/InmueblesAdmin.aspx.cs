@@ -31,19 +31,21 @@ namespace WebApplication
                 dgvInmuebles.DataBind();
             }
         }
-        protected void tbxFiltro_TextChanged(object sender, EventArgs e)
-        {
-            List<Inmueble> Lista = (List<Inmueble>)Session["listaInmueble"];
-            listaInmueble = Lista.FindAll(x => x.Descripcion.ToUpper().Contains(tbxFiltro.Text.ToUpper()));
-            dgvInmuebles.DataSource = listaInmueble;
-            dgvInmuebles.DataBind();
-        }
 
         protected void dgvInmuebles_SelectedIndexChanged(object sender, EventArgs e)
         {
             var id = dgvInmuebles.SelectedDataKey.Value.ToString();
             Response.Redirect("EditarInmueble.aspx?ID=" + id);
         }
+        protected void dgvInmuebles_Command(object sender, CommandEventArgs e)
+        {
+            if (e.CommandName == "SelectIMG")
+            {
+                string id = e.CommandArgument.ToString();
+                Response.Redirect("ImagenesAdm.aspx?ID=" + id);
+            }
+        }
+
         protected string GetImageUrl(object imageUrlObj)
         {
             string imageUrl = imageUrlObj as string;

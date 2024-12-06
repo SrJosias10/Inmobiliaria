@@ -198,11 +198,7 @@ input:focus, textarea:focus, select:focus {
     color: red;
 }
 
-.text-center a {
-    color: #8b5e3c;
-    font-weight: bold;
-    text-decoration: underline;
-}
+
 
 .container {
     max-width: 600px;
@@ -323,7 +319,6 @@ input:focus, textarea:focus, select:focus {
             .contact-buttons a.email:hover {
                 background-color: #0056b3;
             }
-
 
 
 
