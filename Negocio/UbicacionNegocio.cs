@@ -23,7 +23,7 @@ namespace Negocio
                 {
                     Ubicacion aux = new Ubicacion();
                     aux.ID = (int)datos.Lector["ID"];
-                    aux.Ciudad = new Ciudad(); // Inicializamos el objeto antes de usarlo
+                    aux.Ciudad = new Ciudad();
                     aux.Ciudad.ID = (int)datos.Lector["IdCiudad"];
                     aux.Descripcion = (string)datos.Lector["Descripcion"];
 

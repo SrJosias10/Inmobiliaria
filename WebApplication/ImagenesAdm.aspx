@@ -4,21 +4,16 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container mt-4">    
-                <!-- Vista previa de imagen -->
         <div class="row mb-4">
             <div class="col-lg-6 offset-lg-3 text-center">
                 <asp:Image ID="imgInmuebleNuevo" runat="server" CssClass="img-fluid rounded shadow" Width="350" />
             </div>
         </div>      
-      
-        <!-- Mensaje -->
         <div class="row">
             <div class="col-12 text-center">
                 <asp:Label ID="lblMensaje" runat="server" Visible="false" CssClass="text-danger fw-bold"></asp:Label>
             </div>
         </div>
-        
-        <!-- Listado de imágenes -->
         <div class="row">
             <asp:Repeater ID="repImagenes" runat="server">
                 <ItemTemplate>
@@ -33,14 +28,12 @@
                 </ItemTemplate>
             </asp:Repeater>
         </div>
-        <!-- Formulario de Imagen -->
     <div class="row mb-4">
         <div class="col-lg-6 offset-lg-3">
             <label for="txtImagen" class="form-label">Subir Imagen</label>
             <asp:FileUpload ID="txtImagen" runat="server" class="form-control shadow-sm" />
         </div>
     </div>
-        <!-- Botones de acción -->
     <div class="row justify-content-center mb-4">
         <div class="col-lg-6 text-center">
             <asp:Button Text="Guardar" CssClass="btn btn-primary btn-lg me-3 shadow-sm" OnClick="btnGuardar_Click" ID="btnGuardar" runat="server" />

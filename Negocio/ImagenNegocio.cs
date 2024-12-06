@@ -77,12 +77,11 @@ namespace Negocio
 
             try
             {
-                // Insertar la imagen en la tabla Imagenes
                 datos.setearConsulta("INSERT INTO Imagenes (IdInmueble, ImagenUrl) VALUES (@idInmueble, @imagenUrl)");
                 datos.setearParametro("@idInmueble", idInmueble);
                 datos.setearParametro("@imagenUrl", imagenUrl);
 
-                datos.ejecutarAccion();  // Ejecuta la consulta de inserción
+                datos.ejecutarAccion();
             }
             catch (Exception)
             {
@@ -104,7 +103,6 @@ namespace Negocio
             }
             catch (Exception)
             {
-                // Manejo de errores
             }
             finally
             {

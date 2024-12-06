@@ -143,15 +143,9 @@ namespace WebApplication
                 nuevo.Antiguedad = int.Parse(txtAntiguedad.Text);
                 nuevo.Expensas = int.Parse(txtExpensas.Text);
                 nuevo.Superficie = int.Parse(txtSuperficie.Text);
-
-
-                //// Guardar en la base de datos
                 InmuebleNegocio negocio = new InmuebleNegocio();
                     negocio.agregar(nuevo);
-
-                    //// Redirigir o mostrar éxito
                     Response.Redirect("Inmuebles.aspx", false);
-         
             }
             catch (Exception ex)
             {

@@ -10,7 +10,6 @@
         <h2 class="text-center mb-4">Editar Inmueble</h2>
         
         <div class="row">
-            <!-- Primera columna -->
             <div class="col-md-5">
                 <div class="mb-3">
                     <label for="ddlTipo" class="form-label">Seleccione Tipo</label>
@@ -45,8 +44,6 @@
                     <asp:TextBox class="form-control" ID="txtGarage" runat="server" />
                 </div>
             </div>
-            
-            <!-- Segunda columna -->
             <div class="col-md-5 ms-3">
                 <div class="mb-3">
                     <label for="txtDormitorio" class="form-label">Cantidad Dormitorios</label>
@@ -68,8 +65,6 @@
                     <label for="txtSuperficie" class="form-label">Superficie (m²)</label>
                     <asp:TextBox class="form-control" ID="txtSuperficie" runat="server" />
                 </div>
-                
-                <!-- Confirmación de eliminación -->
                 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                     <ContentTemplate>
                         <asp:Button Text="Eliminar" ID="Button2" OnClick="btnEliminar_Click" CssClass="btn btn-danger float-end mb-3" runat="server" />
@@ -83,8 +78,6 @@
                 </asp:UpdatePanel>
             </div>
         </div>
-
-        <!-- Botones -->
         <div class="row mt-4">
             <div class="col-md-6 d-flex justify-content-start">
                 <div>

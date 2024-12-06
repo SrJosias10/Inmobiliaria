@@ -41,8 +41,6 @@
                             <p><i class="fa-solid fa-warehouse"></i> <%: inm.Garages %> Garages</p>
                         </div>
                     </div>
-                    
-                    <!-- Carrusel de imágenes -->
                     <div class="col-md-6 position-relative">
                         <% if (imagenes?.Count > 0) { %>
                             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -83,7 +81,6 @@
                     </div>
                 </div>
                 <br /><br />
-                <!-- Descripción -->
                 <p class="mb-4 fs-5 text-muted">
                     <% if (inm.Tipo.Descripcion == "Casa") { %>
                         En esta ocasión, te presentamos esta casa que cuenta con <%: inm.Ambientes %> ambientes, <%: inm.Dormitorios %> dormitorios, <%: inm.Banos %> baños y <%: inm.Garages %> garages. La propiedad tiene <%: inm.Antiguedad %> años de antigüedad y una superficie de <%: inm.Superficie %> metros cuadrados, lo que la hace cómoda y funcional. ¡Contáctanos para que podamos brindarte todos los detalles!
@@ -92,7 +89,6 @@
                     <% } %>
                 </p>
                 <br />
-                <!-- Contacto -->
                 <div class="d-flex justify-content-between">
                     <a href="https://wa.me/541121640928?text=Hola! quiero informacion sobre la publicacion: <%: inm.Tipo.Descripcion %> en <%: inm.Ubicacion.Descripcion %> con <%: inm.Ambientes %> ambientes" class="btn btn-success w-100 me-2">
                         <i class="fa-brands fa-whatsapp"></i> Contactar por Whatsapp

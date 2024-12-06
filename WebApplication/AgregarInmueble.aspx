@@ -7,7 +7,6 @@
     <div class="container mt-5">
         <h2 class="text-center mb-4">Agregar Inmueble</h2>
         <div class="row justify-content-center">
-            <!-- Primera columna -->
             <div class="col-md-5 bg-light p-4 rounded shadow">
                 <div class="mb-3">
                     <label for="ddlTipo" class="form-label">Seleccione Tipo</label>
@@ -38,8 +37,6 @@
                     <asp:TextBox ID="txtAmbientes" runat="server" CssClass="form-control" />
                 </div>
             </div>
-
-            <!-- Segunda columna -->
             <div class="col-md-5 bg-light p-4 rounded shadow ms-3">
                 <div class="mb-3">
                     <label for="txtGarage" class="form-label">Cantidad Garages</label>
@@ -67,16 +64,12 @@
                 </div>
             </div>
         </div>
-
-        <!-- Botones -->
         <div class="row justify-content-center mt-4">
             <div class="col-md-4 text-center">
                 <asp:Button ID="btnGuardar" runat="server" CssClass="btn btn-danger btn-lg me-3" Text="Guardar" OnClick="btnGuardar_Click" />
                 <a href="InmueblesAdmin.aspx" class="btn btn-success btn-lg">Volver</a>
             </div>
         </div>
-
-        <!-- Mensaje -->
         <div class="row justify-content-center mt-3">
             <div class="col-md-6 text-center">
                 <asp:Label ID="lblMensaje" runat="server" Visible="false" CssClass="text-danger"></asp:Label>

@@ -14,7 +14,6 @@ namespace WebApplication
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            // Validación de sesión
             if (Session["cuenta"] != null)
             {
                 usuario = (Cuenta)Session["cuenta"];
@@ -24,8 +23,6 @@ namespace WebApplication
                 Response.Redirect("Login.aspx");
                 return;
             }
-
-            // Cargar favoritos si no es un postback
             if (!IsPostBack)
             {
                 CargarFavoritos();
@@ -56,11 +53,7 @@ namespace WebApplication
                     ListaFavoritos.Add(inmueble);
                 }
             }
-
-            // Guardar favoritos en sesión
             Session["Favoritos"] = ListaFavoritos;
-
-            // Cargar imágenes asociadas
             ImagenesPorFavoritos = new Dictionary<int, List<Imagen>>();
             ImagenNegocio imagenNegocio = new ImagenNegocio();
             foreach (var inmueble in ListaFavoritos)

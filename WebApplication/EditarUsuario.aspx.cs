@@ -49,15 +49,6 @@ namespace WebApplication
             txtNombres.Text = usuario.Nombre;
             txtApellidos.Text = usuario.Apellido;
             txtTelefono.Text = usuario.Telefono.ToString();
-
-            //if (!string.IsNullOrEmpty(usuario.ImagenUrl))
-            //{
-            //    imgNuevoPerfil.ImageUrl = "~/Images/" + usuario.ImagenUrl;
-            //}
-            //else
-            //{
-            //    imgNuevoPerfil.ImageUrl = "https://cdn.icon-icons.com/icons2/3298/PNG/512/ui_user_profile_avatar_person_icon_208734.png";
-            //}
         }
 
         protected void btnGuardar_Click(object sender, EventArgs e)
@@ -65,33 +56,16 @@ namespace WebApplication
             try
             {
                 CuentaNegocio negocio = new CuentaNegocio();
-
-                // Recuperar el ID del usuario desde la sesión
                 int id = (int)Session["usuarioID"];
                 Cuenta usuario = negocio.obtenerPorId(id);
 
                 if (usuario != null)
                 {
-                    //string ruta = Server.MapPath("~/Images/");
-
-                    //// Verificar si se ha seleccionado un archivo para la imagen
-                    //if (txtImagen.PostedFile != null && txtImagen.PostedFile.ContentLength > 0)
-                    //{
-                    //    // Guardar el archivo de imagen
-                    //    txtImagen.PostedFile.SaveAs(ruta + "perfil-" + usuario.Id + ".png");
-                    //    usuario.ImagenUrl = "perfil-" + usuario.Id + ".png";
-                    //}
-
-                    // Actualizar otros campos del usuario
                     usuario.Clave = txtPass.Text;
                     usuario.Nombre = txtNombres.Text;
                     usuario.Apellido = txtApellidos.Text;
                     usuario.Telefono = int.Parse(txtTelefono.Text);
-
-                    // Actualizar en la base de datos
                     negocio.Actualizar(usuario);
-
-                    // Opcional: Mostrar mensaje de éxito
                     lblMensaje.Text = "Registro actualizado con éxito.";
                     lblMensaje.CssClass = "text-success";
                     lblMensaje.Visible = true;

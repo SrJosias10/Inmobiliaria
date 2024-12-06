@@ -179,7 +179,6 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                // Establecer la consulta para insertar el inmueble y devolver el ID insertado
                 datos.setearConsulta("INSERT INTO Inmueble (IdTipoInmueble, IdUbicacion, IdEstado, IdMoneda, Descripcion, Precio, Ambientes, Garage, Dormitorios, Banos, Antiguedad, Expensas, Superficie) " +
                     "VALUES (@IdTipoInmueble, @IdUbicacion, @IdEstado, @IdMoneda, @Descripcion, @Precio, @Ambientes, @Garage, @Dormitorios, @Banos, @Antiguedad, @Expensas, @Superficie); " +
                     "SELECT SCOPE_IDENTITY();");
@@ -198,7 +197,7 @@ namespace Negocio
                 datos.setearParametro("@Expensas", inmueble.Expensas);
                 datos.setearParametro("@Superficie", inmueble.Superficie);
 
-                return Convert.ToInt32(datos.ejecutarAccionScalar());  // Devuelve el ID generado del inmueble
+                return Convert.ToInt32(datos.ejecutarAccionScalar());
             }
             catch (Exception ex)
             {

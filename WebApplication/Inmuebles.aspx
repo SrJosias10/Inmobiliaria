@@ -27,7 +27,6 @@
             <% foreach (Dominio.Inmueble inm in ListaInmuebles) { %>
                 <div class="card mb-4 w-75 shadow-lg" style="border: 1px solid #d1cfc1; background-color: #ffffff;">
                     <div class="row g-0">
-                        <!-- Seccion imagenes -->
                         <div class="col-md-4 position-relative">
                             <% if (ImagenesPorInmueble[inm.ID]?.Count > 0) { %>
                                 <div id="carousel<%: inm.ID %>" class="carousel slide" data-bs-ride="carousel">
@@ -40,7 +39,6 @@
                                             <% primera = false; %>
                                         <% } %>
                                     </div>
-                                    <!-- Botones para el carrusel -->
                                     <button class="carousel-control-prev" type="button" data-bs-target="#carousel<%: inm.ID %>" data-bs-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     </button>
@@ -48,8 +46,6 @@
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     </button>
                                 </div>
-
-                                <!-- Cartel del estado del inmueble, verde para los activos, rojo para los vendidos -->
                                 <%if (inm.Estado.ID == 1 || inm.Estado.ID == 2){ %>
                                 <div class="position-absolute top-0 end-0 m-2 bg-success text-white p-2" style="font-size: 16px; font-weight: bold; z-index: 10;">
                                     <%: inm.Estado.Descripcion %>
@@ -65,9 +61,6 @@
                                 <p class="text-center">No hay imágenes disponibles.</p>
                             <% } %>
                         </div>
-
-
-                        <!-- Columna info inmueble -->
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="fs-4 mb-4" style="color: #8b5e3c;">

@@ -134,8 +134,6 @@ namespace WebApplication
 
                 if (inmueble != null)
                 {
-
-                    // Actualizar otros campos del usuario
                     inmueble.Tipo.ID = !string.IsNullOrEmpty(ddlTipo.SelectedValue) ? Convert.ToInt32(ddlTipo.SelectedValue) : 0;
                     inmueble.Ubicacion.ID = !string.IsNullOrEmpty(ddlUbicacion.SelectedValue) ? Convert.ToInt32(ddlUbicacion.SelectedValue) : 0;
                     inmueble.Estado.ID = !string.IsNullOrEmpty(ddlEstado.SelectedValue) ? Convert.ToInt32(ddlEstado.SelectedValue) : 0;

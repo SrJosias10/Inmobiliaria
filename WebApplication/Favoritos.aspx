@@ -16,7 +16,6 @@
                         <div class="card mb-4 w-75 shadow-lg" 
                              style="border: 1px solid #d1cfc1; background-color: #ffffff;">
                             <div class="row g-0">
-                                <!-- Sección de imágenes -->
                                 <div class="col-md-4 position-relative">
                                     <% if (ImagenesPorFavoritos[inm.ID]?.Count > 0) { %>
                                         <div id="carousel<%: inm.ID %>" class="carousel slide" data-bs-ride="carousel">
@@ -42,7 +41,6 @@
                                     <% } else { %>
                                         <p class="text-center">No hay imágenes disponibles.</p>
                                     <% } %>
-                                     <!-- Cartel del estado del inmueble, verde para los activos, rojo para los vendidos -->
                                      <%if (inm.Estado.ID == 1 || inm.Estado.ID == 2){ %>
                                      <div class="position-absolute top-0 end-0 m-2 bg-success text-white p-2" style="font-size: 16px; font-weight: bold; z-index: 10;">
                                          <%: inm.Estado.Descripcion %>
@@ -53,7 +51,6 @@
                                         </div>
                                      <%}%>
                                 </div>
-                                <!-- Columna info inmueble -->
                                 <div class="col-md-8">
                                     <div class="card-body">
                                         <h5 class="fs-4 mb-4" style="color: #8b5e3c;">
@@ -71,7 +68,6 @@
                                                 </small>
                                             </p>
                                         </h5>
-                                        <!-- Enlace para eliminar favorito -->
                                         <a href="Favoritos.aspx?id=<%: inm.ID %>" 
                                            class="btn btn-danger btn-sm eliminar-btn" 
                                            style="position: absolute; top: 10px; right: 10px;" 
